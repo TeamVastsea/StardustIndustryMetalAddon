@@ -19,489 +19,495 @@ public class ModItem {
 
     private static final List<DeferredItem<?>> TOOL_ITEMS = new ArrayList<>();
 
+    private static <T extends net.minecraft.world.item.Item> DeferredItem<T> registerTool(String name, java.util.function.Supplier<T> supplier) {
+        DeferredItem<T> item = ITEMS.register(name, supplier);
+        TOOL_ITEMS.add(item);
+        return item;
+    }
+
 
 
     // ---------- 钢制工具 ----------
     public static final DeferredItem<SwordItem> STEEL_SWORD =
-            ITEMS.register("tool/steel_sword",
+            registerTool("tool/steel_sword",
                     () -> new SwordItem(ModToolTiers.STEEL,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.STEEL, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> STEEL_PICKAXE =
-            ITEMS.register("tool/steel_pickaxe",
+            registerTool("tool/steel_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.STEEL,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.STEEL, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> STEEL_SHOVEL =
-            ITEMS.register("tool/steel_shovel",
+            registerTool("tool/steel_shovel",
                     () -> new ShovelItem(ModToolTiers.STEEL,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.STEEL, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> STEEL_AXE =
-            ITEMS.register("tool/steel_axe",
+            registerTool("tool/steel_axe",
                     () -> new AxeItem(ModToolTiers.STEEL,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.STEEL, 6, -3.1F))));
     public static final DeferredItem<HoeItem> STEEL_HOE =
-            ITEMS.register("tool/steel_hoe",
+            registerTool("tool/steel_hoe",
                     () -> new HoeItem(ModToolTiers.STEEL,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.STEEL, 0, -3.0F))));
 
     // ---------- 铝制工具 ----------
     public static final DeferredItem<SwordItem> ALUMINIUM_SWORD =
-            ITEMS.register("tool/aluminium_sword",
+            registerTool("tool/aluminium_sword",
                     () -> new SwordItem(ModToolTiers.ALUMINIUM,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.ALUMINIUM, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> ALUMINIUM_PICKAXE =
-            ITEMS.register("tool/aluminium_pickaxe",
+            registerTool("tool/aluminium_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.ALUMINIUM,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.ALUMINIUM, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> ALUMINIUM_SHOVEL =
-            ITEMS.register("tool/aluminium_shovel",
+            registerTool("tool/aluminium_shovel",
                     () -> new ShovelItem(ModToolTiers.ALUMINIUM,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.ALUMINIUM, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> ALUMINIUM_AXE =
-            ITEMS.register("tool/aluminium_axe",
+            registerTool("tool/aluminium_axe",
                     () -> new AxeItem(ModToolTiers.ALUMINIUM,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.ALUMINIUM, 6, -3.1F))));
     public static final DeferredItem<HoeItem> ALUMINIUM_HOE =
-            ITEMS.register("tool/aluminium_hoe",
+            registerTool("tool/aluminium_hoe",
                     () -> new HoeItem(ModToolTiers.ALUMINIUM,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.ALUMINIUM, 0, -3.0F))));
 
     // ---------- 铅制工具 ----------
     public static final DeferredItem<SwordItem> LEAD_SWORD =
-            ITEMS.register("tool/lead_sword",
+            registerTool("tool/lead_sword",
                     () -> new SwordItem(ModToolTiers.LEAD,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.LEAD, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> LEAD_PICKAXE =
-            ITEMS.register("tool/lead_pickaxe",
+            registerTool("tool/lead_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.LEAD,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.LEAD, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> LEAD_SHOVEL =
-            ITEMS.register("tool/lead_shovel",
+            registerTool("tool/lead_shovel",
                     () -> new ShovelItem(ModToolTiers.LEAD,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.LEAD, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> LEAD_AXE =
-            ITEMS.register("tool/lead_axe",
+            registerTool("tool/lead_axe",
                     () -> new AxeItem(ModToolTiers.LEAD,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.LEAD, 6, -3.1F))));
     public static final DeferredItem<HoeItem> LEAD_HOE =
-            ITEMS.register("tool/lead_hoe",
+            registerTool("tool/lead_hoe",
                     () -> new HoeItem(ModToolTiers.LEAD,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.LEAD, 0, -3.0F))));
 
     // ---------- 锌制工具 ----------
     public static final DeferredItem<SwordItem> ZINC_SWORD =
-            ITEMS.register("tool/zinc_sword",
+            registerTool("tool/zinc_sword",
                     () -> new SwordItem(ModToolTiers.ZINC,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.ZINC, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> ZINC_PICKAXE =
-            ITEMS.register("tool/zinc_pickaxe",
+            registerTool("tool/zinc_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.ZINC,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.ZINC, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> ZINC_SHOVEL =
-            ITEMS.register("tool/zinc_shovel",
+            registerTool("tool/zinc_shovel",
                     () -> new ShovelItem(ModToolTiers.ZINC,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.ZINC, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> ZINC_AXE =
-            ITEMS.register("tool/zinc_axe",
+            registerTool("tool/zinc_axe",
                     () -> new AxeItem(ModToolTiers.ZINC,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.ZINC, 6, -3.1F))));
     public static final DeferredItem<HoeItem> ZINC_HOE =
-            ITEMS.register("tool/zinc_hoe",
+            registerTool("tool/zinc_hoe",
                     () -> new HoeItem(ModToolTiers.ZINC,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.ZINC, 0, -3.0F))));
 
     // ---------- 镍制工具 ----------
     public static final DeferredItem<SwordItem> NICKEL_SWORD =
-            ITEMS.register("tool/nickel_sword",
+            registerTool("tool/nickel_sword",
                     () -> new SwordItem(ModToolTiers.NICKEL,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.NICKEL, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> NICKEL_PICKAXE =
-            ITEMS.register("tool/nickel_pickaxe",
+            registerTool("tool/nickel_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.NICKEL,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.NICKEL, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> NICKEL_SHOVEL =
-            ITEMS.register("tool/nickel_shovel",
+            registerTool("tool/nickel_shovel",
                     () -> new ShovelItem(ModToolTiers.NICKEL,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.NICKEL, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> NICKEL_AXE =
-            ITEMS.register("tool/nickel_axe",
+            registerTool("tool/nickel_axe",
                     () -> new AxeItem(ModToolTiers.NICKEL,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.NICKEL, 6, -3.1F))));
     public static final DeferredItem<HoeItem> NICKEL_HOE =
-            ITEMS.register("tool/nickel_hoe",
+            registerTool("tool/nickel_hoe",
                     () -> new HoeItem(ModToolTiers.NICKEL,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.NICKEL, 0, -3.0F))));
 
     // ---------- 铬制工具 ----------
     public static final DeferredItem<SwordItem> CHROME_SWORD =
-            ITEMS.register("tool/chrome_sword",
+            registerTool("tool/chrome_sword",
                     () -> new SwordItem(ModToolTiers.CHROME,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.CHROME, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> CHROME_PICKAXE =
-            ITEMS.register("tool/chrome_pickaxe",
+            registerTool("tool/chrome_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.CHROME,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.CHROME, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> CHROME_SHOVEL =
-            ITEMS.register("tool/chrome_shovel",
+            registerTool("tool/chrome_shovel",
                     () -> new ShovelItem(ModToolTiers.CHROME,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.CHROME, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> CHROME_AXE =
-            ITEMS.register("tool/chrome_axe",
+            registerTool("tool/chrome_axe",
                     () -> new AxeItem(ModToolTiers.CHROME,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.CHROME, 6, -3.1F))));
     public static final DeferredItem<HoeItem> CHROME_HOE =
-            ITEMS.register("tool/chrome_hoe",
+            registerTool("tool/chrome_hoe",
                     () -> new HoeItem(ModToolTiers.CHROME,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.CHROME, 0, -3.0F))));
 
     // ---------- 锇制工具 ----------
     public static final DeferredItem<SwordItem> OSMIUM_SWORD =
-            ITEMS.register("tool/osmium_sword",
+            registerTool("tool/osmium_sword",
                     () -> new SwordItem(ModToolTiers.OSMIUM,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.OSMIUM, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> OSMIUM_PICKAXE =
-            ITEMS.register("tool/osmium_pickaxe",
+            registerTool("tool/osmium_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.OSMIUM,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.OSMIUM, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> OSMIUM_SHOVEL =
-            ITEMS.register("tool/osmium_shovel",
+            registerTool("tool/osmium_shovel",
                     () -> new ShovelItem(ModToolTiers.OSMIUM,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.OSMIUM, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> OSMIUM_AXE =
-            ITEMS.register("tool/osmium_axe",
+            registerTool("tool/osmium_axe",
                     () -> new AxeItem(ModToolTiers.OSMIUM,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.OSMIUM, 6, -3.1F))));
     public static final DeferredItem<HoeItem> OSMIUM_HOE =
-            ITEMS.register("tool/osmium_hoe",
+            registerTool("tool/osmium_hoe",
                     () -> new HoeItem(ModToolTiers.OSMIUM,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.OSMIUM, 0, -3.0F))));
 
     // ---------- 锡制工具 ----------
     public static final DeferredItem<SwordItem> TIN_SWORD =
-            ITEMS.register("tool/tin_sword",
+            registerTool("tool/tin_sword",
                     () -> new SwordItem(ModToolTiers.TIN,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.TIN, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> TIN_PICKAXE =
-            ITEMS.register("tool/tin_pickaxe",
+            registerTool("tool/tin_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.TIN,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.TIN, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> TIN_SHOVEL =
-            ITEMS.register("tool/tin_shovel",
+            registerTool("tool/tin_shovel",
                     () -> new ShovelItem(ModToolTiers.TIN,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.TIN, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> TIN_AXE =
-            ITEMS.register("tool/tin_axe",
+            registerTool("tool/tin_axe",
                     () -> new AxeItem(ModToolTiers.TIN,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.TIN, 6, -3.1F))));
     public static final DeferredItem<HoeItem> TIN_HOE =
-            ITEMS.register("tool/tin_hoe",
+            registerTool("tool/tin_hoe",
                     () -> new HoeItem(ModToolTiers.TIN,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.TIN, 0, -3.0F))));
 
     // ---------- 银制工具 ----------
     public static final DeferredItem<SwordItem> SILVER_SWORD =
-            ITEMS.register("tool/silver_sword",
+            registerTool("tool/silver_sword",
                     () -> new SwordItem(ModToolTiers.SILVER,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.SILVER, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> SILVER_PICKAXE =
-            ITEMS.register("tool/silver_pickaxe",
+            registerTool("tool/silver_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.SILVER,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.SILVER, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> SILVER_SHOVEL =
-            ITEMS.register("tool/silver_shovel",
+            registerTool("tool/silver_shovel",
                     () -> new ShovelItem(ModToolTiers.SILVER,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.SILVER, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> SILVER_AXE =
-            ITEMS.register("tool/silver_axe",
+            registerTool("tool/silver_axe",
                     () -> new AxeItem(ModToolTiers.SILVER,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.SILVER, 6, -3.1F))));
     public static final DeferredItem<HoeItem> SILVER_HOE =
-            ITEMS.register("tool/silver_hoe",
+            registerTool("tool/silver_hoe",
                     () -> new HoeItem(ModToolTiers.SILVER,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.SILVER, 0, -3.0F))));
 
     // ---------- 铂制工具 ----------
     public static final DeferredItem<SwordItem> PLATINUM_SWORD =
-            ITEMS.register("tool/platinum_sword",
+            registerTool("tool/platinum_sword",
                     () -> new SwordItem(ModToolTiers.PLATINUM,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.PLATINUM, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> PLATINUM_PICKAXE =
-            ITEMS.register("tool/platinum_pickaxe",
+            registerTool("tool/platinum_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.PLATINUM,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.PLATINUM, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> PLATINUM_SHOVEL =
-            ITEMS.register("tool/platinum_shovel",
+            registerTool("tool/platinum_shovel",
                     () -> new ShovelItem(ModToolTiers.PLATINUM,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.PLATINUM, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> PLATINUM_AXE =
-            ITEMS.register("tool/platinum_axe",
+            registerTool("tool/platinum_axe",
                     () -> new AxeItem(ModToolTiers.PLATINUM,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.PLATINUM, 6, -3.1F))));
     public static final DeferredItem<HoeItem> PLATINUM_HOE =
-            ITEMS.register("tool/platinum_hoe",
+            registerTool("tool/platinum_hoe",
                     () -> new HoeItem(ModToolTiers.PLATINUM,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.PLATINUM, 0, -3.0F))));
 
     // ---------- 钛制工具 ----------
     public static final DeferredItem<SwordItem> TITANIUM_SWORD =
-            ITEMS.register("tool/titanium_sword",
+            registerTool("tool/titanium_sword",
                     () -> new SwordItem(ModToolTiers.TITANIUM,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.TITANIUM, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> TITANIUM_PICKAXE =
-            ITEMS.register("tool/titanium_pickaxe",
+            registerTool("tool/titanium_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.TITANIUM,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.TITANIUM, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> TITANIUM_SHOVEL =
-            ITEMS.register("tool/titanium_shovel",
+            registerTool("tool/titanium_shovel",
                     () -> new ShovelItem(ModToolTiers.TITANIUM,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.TITANIUM, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> TITANIUM_AXE =
-            ITEMS.register("tool/titanium_axe",
+            registerTool("tool/titanium_axe",
                     () -> new AxeItem(ModToolTiers.TITANIUM,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.TITANIUM, 6, -3.1F))));
     public static final DeferredItem<HoeItem> TITANIUM_HOE =
-            ITEMS.register("tool/titanium_hoe",
+            registerTool("tool/titanium_hoe",
                     () -> new HoeItem(ModToolTiers.TITANIUM,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.TITANIUM, 0, -3.0F))));
 
     // ---------- 钨制工具 ----------
     public static final DeferredItem<SwordItem> TUNGSTEN_SWORD =
-            ITEMS.register("tool/tungsten_sword",
+            registerTool("tool/tungsten_sword",
                     () -> new SwordItem(ModToolTiers.TUNGSTEN,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.TUNGSTEN, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> TUNGSTEN_PICKAXE =
-            ITEMS.register("tool/tungsten_pickaxe",
+            registerTool("tool/tungsten_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.TUNGSTEN,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.TUNGSTEN, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> TUNGSTEN_SHOVEL =
-            ITEMS.register("tool/tungsten_shovel",
+            registerTool("tool/tungsten_shovel",
                     () -> new ShovelItem(ModToolTiers.TUNGSTEN,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.TUNGSTEN, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> TUNGSTEN_AXE =
-            ITEMS.register("tool/tungsten_axe",
+            registerTool("tool/tungsten_axe",
                     () -> new AxeItem(ModToolTiers.TUNGSTEN,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.TUNGSTEN, 6, -3.1F))));
     public static final DeferredItem<HoeItem> TUNGSTEN_HOE =
-            ITEMS.register("tool/tungsten_hoe",
+            registerTool("tool/tungsten_hoe",
                     () -> new HoeItem(ModToolTiers.TUNGSTEN,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.TUNGSTEN, 0, -3.0F))));
 
     // ---------- 钴制工具 ----------
     public static final DeferredItem<SwordItem> COBALT_SWORD =
-            ITEMS.register("tool/cobalt_sword",
+            registerTool("tool/cobalt_sword",
                     () -> new SwordItem(ModToolTiers.COBALT,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.COBALT, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> COBALT_PICKAXE =
-            ITEMS.register("tool/cobalt_pickaxe",
+            registerTool("tool/cobalt_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.COBALT,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.COBALT, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> COBALT_SHOVEL =
-            ITEMS.register("tool/cobalt_shovel",
+            registerTool("tool/cobalt_shovel",
                     () -> new ShovelItem(ModToolTiers.COBALT,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.COBALT, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> COBALT_AXE =
-            ITEMS.register("tool/cobalt_axe",
+            registerTool("tool/cobalt_axe",
                     () -> new AxeItem(ModToolTiers.COBALT,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.COBALT, 6, -3.1F))));
     public static final DeferredItem<HoeItem> COBALT_HOE =
-            ITEMS.register("tool/cobalt_hoe",
+            registerTool("tool/cobalt_hoe",
                     () -> new HoeItem(ModToolTiers.COBALT,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.COBALT, 0, -3.0F))));
 
     // ---------- 青铜制工具 ----------
     public static final DeferredItem<SwordItem> BRONZE_SWORD =
-            ITEMS.register("tool/bronze_sword",
+            registerTool("tool/bronze_sword",
                     () -> new SwordItem(ModToolTiers.BRONZE,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.BRONZE, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> BRONZE_PICKAXE =
-            ITEMS.register("tool/bronze_pickaxe",
+            registerTool("tool/bronze_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.BRONZE,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.BRONZE, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> BRONZE_SHOVEL =
-            ITEMS.register("tool/bronze_shovel",
+            registerTool("tool/bronze_shovel",
                     () -> new ShovelItem(ModToolTiers.BRONZE,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.BRONZE, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> BRONZE_AXE =
-            ITEMS.register("tool/bronze_axe",
+            registerTool("tool/bronze_axe",
                     () -> new AxeItem(ModToolTiers.BRONZE,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.BRONZE, 6, -3.1F))));
     public static final DeferredItem<HoeItem> BRONZE_HOE =
-            ITEMS.register("tool/bronze_hoe",
+            registerTool("tool/bronze_hoe",
                     () -> new HoeItem(ModToolTiers.BRONZE,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.BRONZE, 0, -3.0F))));
 
     // ---------- 黄铜制工具 ----------
     public static final DeferredItem<SwordItem> BRASS_SWORD =
-            ITEMS.register("tool/brass_sword",
+            registerTool("tool/brass_sword",
                     () -> new SwordItem(ModToolTiers.BRASS,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.BRASS, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> BRASS_PICKAXE =
-            ITEMS.register("tool/brass_pickaxe",
+            registerTool("tool/brass_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.BRASS,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.BRASS, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> BRASS_SHOVEL =
-            ITEMS.register("tool/brass_shovel",
+            registerTool("tool/brass_shovel",
                     () -> new ShovelItem(ModToolTiers.BRASS,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.BRASS, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> BRASS_AXE =
-            ITEMS.register("tool/brass_axe",
+            registerTool("tool/brass_axe",
                     () -> new AxeItem(ModToolTiers.BRASS,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.BRASS, 6, -3.1F))));
     public static final DeferredItem<HoeItem> BRASS_HOE =
-            ITEMS.register("tool/brass_hoe",
+            registerTool("tool/brass_hoe",
                     () -> new HoeItem(ModToolTiers.BRASS,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.BRASS, 0, -3.0F))));
 
     // ---------- 不锈钢制工具 ----------
     public static final DeferredItem<SwordItem> STAINLESS_STEEL_SWORD =
-            ITEMS.register("tool/stainless_steel_sword",
+            registerTool("tool/stainless_steel_sword",
                     () -> new SwordItem(ModToolTiers.STAINLESS_STEEL,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.STAINLESS_STEEL, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> STAINLESS_STEEL_PICKAXE =
-            ITEMS.register("tool/stainless_steel_pickaxe",
+            registerTool("tool/stainless_steel_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.STAINLESS_STEEL,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.STAINLESS_STEEL, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> STAINLESS_STEEL_SHOVEL =
-            ITEMS.register("tool/stainless_steel_shovel",
+            registerTool("tool/stainless_steel_shovel",
                     () -> new ShovelItem(ModToolTiers.STAINLESS_STEEL,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.STAINLESS_STEEL, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> STAINLESS_STEEL_AXE =
-            ITEMS.register("tool/stainless_steel_axe",
+            registerTool("tool/stainless_steel_axe",
                     () -> new AxeItem(ModToolTiers.STAINLESS_STEEL,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.STAINLESS_STEEL, 6, -3.1F))));
     public static final DeferredItem<HoeItem> STAINLESS_STEEL_HOE =
-            ITEMS.register("tool/stainless_steel_hoe",
+            registerTool("tool/stainless_steel_hoe",
                     () -> new HoeItem(ModToolTiers.STAINLESS_STEEL,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.STAINLESS_STEEL, 0, -3.0F))));
 
     // ---------- 碳钢制工具 ----------
     public static final DeferredItem<SwordItem> CARBON_STEEL_SWORD =
-            ITEMS.register("tool/carbon_steel_sword",
+            registerTool("tool/carbon_steel_sword",
                     () -> new SwordItem(ModToolTiers.CARBON_STEEL,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.CARBON_STEEL, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> CARBON_STEEL_PICKAXE =
-            ITEMS.register("tool/carbon_steel_pickaxe",
+            registerTool("tool/carbon_steel_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.CARBON_STEEL,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.CARBON_STEEL, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> CARBON_STEEL_SHOVEL =
-            ITEMS.register("tool/carbon_steel_shovel",
+            registerTool("tool/carbon_steel_shovel",
                     () -> new ShovelItem(ModToolTiers.CARBON_STEEL,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.CARBON_STEEL, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> CARBON_STEEL_AXE =
-            ITEMS.register("tool/carbon_steel_axe",
+            registerTool("tool/carbon_steel_axe",
                     () -> new AxeItem(ModToolTiers.CARBON_STEEL,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.CARBON_STEEL, 6, -3.1F))));
     public static final DeferredItem<HoeItem> CARBON_STEEL_HOE =
-            ITEMS.register("tool/carbon_steel_hoe",
+            registerTool("tool/carbon_steel_hoe",
                     () -> new HoeItem(ModToolTiers.CARBON_STEEL,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.CARBON_STEEL, 0, -3.0F))));
 
     // ---------- 高速钢制工具 ----------
     public static final DeferredItem<SwordItem> HIGH_SPEED_STEEL_SWORD =
-            ITEMS.register("tool/high_speed_steel_sword",
+            registerTool("tool/high_speed_steel_sword",
                     () -> new SwordItem(ModToolTiers.HIGH_SPEED_STEEL,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.HIGH_SPEED_STEEL, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> HIGH_SPEED_STEEL_PICKAXE =
-            ITEMS.register("tool/high_speed_steel_pickaxe",
+            registerTool("tool/high_speed_steel_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.HIGH_SPEED_STEEL,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.HIGH_SPEED_STEEL, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> HIGH_SPEED_STEEL_SHOVEL =
-            ITEMS.register("tool/high_speed_steel_shovel",
+            registerTool("tool/high_speed_steel_shovel",
                     () -> new ShovelItem(ModToolTiers.HIGH_SPEED_STEEL,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.HIGH_SPEED_STEEL, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> HIGH_SPEED_STEEL_AXE =
-            ITEMS.register("tool/high_speed_steel_axe",
+            registerTool("tool/high_speed_steel_axe",
                     () -> new AxeItem(ModToolTiers.HIGH_SPEED_STEEL,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.HIGH_SPEED_STEEL, 6, -3.1F))));
     public static final DeferredItem<HoeItem> HIGH_SPEED_STEEL_HOE =
-            ITEMS.register("tool/high_speed_steel_hoe",
+            registerTool("tool/high_speed_steel_hoe",
                     () -> new HoeItem(ModToolTiers.HIGH_SPEED_STEEL,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.HIGH_SPEED_STEEL, 0, -3.0F))));
 
     // ---------- 工具钢制工具 ----------
     public static final DeferredItem<SwordItem> TOOL_STEEL_SWORD =
-            ITEMS.register("tool/tool_steel_sword",
+            registerTool("tool/tool_steel_sword",
                     () -> new SwordItem(ModToolTiers.TOOL_STEEL,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.TOOL_STEEL, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> TOOL_STEEL_PICKAXE =
-            ITEMS.register("tool/tool_steel_pickaxe",
+            registerTool("tool/tool_steel_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.TOOL_STEEL,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.TOOL_STEEL, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> TOOL_STEEL_SHOVEL =
-            ITEMS.register("tool/tool_steel_shovel",
+            registerTool("tool/tool_steel_shovel",
                     () -> new ShovelItem(ModToolTiers.TOOL_STEEL,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.TOOL_STEEL, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> TOOL_STEEL_AXE =
-            ITEMS.register("tool/tool_steel_axe",
+            registerTool("tool/tool_steel_axe",
                     () -> new AxeItem(ModToolTiers.TOOL_STEEL,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.TOOL_STEEL, 6, -3.1F))));
     public static final DeferredItem<HoeItem> TOOL_STEEL_HOE =
-            ITEMS.register("tool/tool_steel_hoe",
+            registerTool("tool/tool_steel_hoe",
                     () -> new HoeItem(ModToolTiers.TOOL_STEEL,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.TOOL_STEEL, 0, -3.0F))));
 
     // ---------- 碳化钨制工具 ----------
     public static final DeferredItem<SwordItem> TUNGSTEN_CARBIDE_SWORD =
-            ITEMS.register("tool/tungsten_carbide_sword",
+            registerTool("tool/tungsten_carbide_sword",
                     () -> new SwordItem(ModToolTiers.TUNGSTEN_CARBIDE,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.TUNGSTEN_CARBIDE, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> TUNGSTEN_CARBIDE_PICKAXE =
-            ITEMS.register("tool/tungsten_carbide_pickaxe",
+            registerTool("tool/tungsten_carbide_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.TUNGSTEN_CARBIDE,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.TUNGSTEN_CARBIDE, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> TUNGSTEN_CARBIDE_SHOVEL =
-            ITEMS.register("tool/tungsten_carbide_shovel",
+            registerTool("tool/tungsten_carbide_shovel",
                     () -> new ShovelItem(ModToolTiers.TUNGSTEN_CARBIDE,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.TUNGSTEN_CARBIDE, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> TUNGSTEN_CARBIDE_AXE =
-            ITEMS.register("tool/tungsten_carbide_axe",
+            registerTool("tool/tungsten_carbide_axe",
                     () -> new AxeItem(ModToolTiers.TUNGSTEN_CARBIDE,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.TUNGSTEN_CARBIDE, 6, -3.1F))));
     public static final DeferredItem<HoeItem> TUNGSTEN_CARBIDE_HOE =
-            ITEMS.register("tool/tungsten_carbide_hoe",
+            registerTool("tool/tungsten_carbide_hoe",
                     () -> new HoeItem(ModToolTiers.TUNGSTEN_CARBIDE,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.TUNGSTEN_CARBIDE, 0, -3.0F))));
 
     // ---------- 硬质合金制工具 ----------
     public static final DeferredItem<SwordItem> CEMENTED_CARBIDE_SWORD =
-            ITEMS.register("tool/cemented_carbide_sword",
+            registerTool("tool/cemented_carbide_sword",
                     () -> new SwordItem(ModToolTiers.CEMENTED_CARBIDE,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.CEMENTED_CARBIDE, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> CEMENTED_CARBIDE_PICKAXE =
-            ITEMS.register("tool/cemented_carbide_pickaxe",
+            registerTool("tool/cemented_carbide_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.CEMENTED_CARBIDE,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.CEMENTED_CARBIDE, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> CEMENTED_CARBIDE_SHOVEL =
-            ITEMS.register("tool/cemented_carbide_shovel",
+            registerTool("tool/cemented_carbide_shovel",
                     () -> new ShovelItem(ModToolTiers.CEMENTED_CARBIDE,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.CEMENTED_CARBIDE, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> CEMENTED_CARBIDE_AXE =
-            ITEMS.register("tool/cemented_carbide_axe",
+            registerTool("tool/cemented_carbide_axe",
                     () -> new AxeItem(ModToolTiers.CEMENTED_CARBIDE,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.CEMENTED_CARBIDE, 6, -3.1F))));
     public static final DeferredItem<HoeItem> CEMENTED_CARBIDE_HOE =
-            ITEMS.register("tool/cemented_carbide_hoe",
+            registerTool("tool/cemented_carbide_hoe",
                     () -> new HoeItem(ModToolTiers.CEMENTED_CARBIDE,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.CEMENTED_CARBIDE, 0, -3.0F))));
 
     // ---------- 康铜制工具 ----------
     public static final DeferredItem<SwordItem> CONSTANTAN_SWORD =
-            ITEMS.register("tool/constantan_sword",
+            registerTool("tool/constantan_sword",
                     () -> new SwordItem(ModToolTiers.CONSTANTAN,
                             new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.CONSTANTAN, 3, -2.4F))));
     public static final DeferredItem<PickaxeItem> CONSTANTAN_PICKAXE =
-            ITEMS.register("tool/constantan_pickaxe",
+            registerTool("tool/constantan_pickaxe",
                     () -> new PickaxeItem(ModToolTiers.CONSTANTAN,
                             new Item.Properties().attributes(PickaxeItem.createAttributes(ModToolTiers.CONSTANTAN, 1, -2.8F))));
     public static final DeferredItem<ShovelItem> CONSTANTAN_SHOVEL =
-            ITEMS.register("tool/constantan_shovel",
+            registerTool("tool/constantan_shovel",
                     () -> new ShovelItem(ModToolTiers.CONSTANTAN,
                             new Item.Properties().attributes(ShovelItem.createAttributes(ModToolTiers.CONSTANTAN, 1.5F, -3.0F))));
     public static final DeferredItem<AxeItem> CONSTANTAN_AXE =
-            ITEMS.register("tool/constantan_axe",
+            registerTool("tool/constantan_axe",
                     () -> new AxeItem(ModToolTiers.CONSTANTAN,
                             new Item.Properties().attributes(AxeItem.createAttributes(ModToolTiers.CONSTANTAN, 6, -3.1F))));
     public static final DeferredItem<HoeItem> CONSTANTAN_HOE =
-            ITEMS.register("tool/constantan_hoe",
+            registerTool("tool/constantan_hoe",
                     () -> new HoeItem(ModToolTiers.CONSTANTAN,
                             new Item.Properties().attributes(HoeItem.createAttributes(ModToolTiers.CONSTANTAN, 0, -3.0F))));
 
@@ -526,162 +532,6 @@ public class ModItem {
         return item;
     }
 
-    static {
-        // 钢工具
-        TOOL_ITEMS.add(STEEL_SWORD);
-        TOOL_ITEMS.add(STEEL_PICKAXE);
-        TOOL_ITEMS.add(STEEL_SHOVEL);
-        TOOL_ITEMS.add(STEEL_AXE);
-        TOOL_ITEMS.add(STEEL_HOE);
-
-        // 铝工具
-        TOOL_ITEMS.add(ALUMINIUM_SWORD);
-        TOOL_ITEMS.add(ALUMINIUM_PICKAXE);
-        TOOL_ITEMS.add(ALUMINIUM_SHOVEL);
-        TOOL_ITEMS.add(ALUMINIUM_AXE);
-        TOOL_ITEMS.add(ALUMINIUM_HOE);
-
-        // 铅工具
-        TOOL_ITEMS.add(LEAD_SWORD);
-        TOOL_ITEMS.add(LEAD_PICKAXE);
-        TOOL_ITEMS.add(LEAD_SHOVEL);
-        TOOL_ITEMS.add(LEAD_AXE);
-        TOOL_ITEMS.add(LEAD_HOE);
-
-        // 锌工具
-        TOOL_ITEMS.add(ZINC_SWORD);
-        TOOL_ITEMS.add(ZINC_PICKAXE);
-        TOOL_ITEMS.add(ZINC_SHOVEL);
-        TOOL_ITEMS.add(ZINC_AXE);
-        TOOL_ITEMS.add(ZINC_HOE);
-
-        // 镍工具
-        TOOL_ITEMS.add(NICKEL_SWORD);
-        TOOL_ITEMS.add(NICKEL_PICKAXE);
-        TOOL_ITEMS.add(NICKEL_SHOVEL);
-        TOOL_ITEMS.add(NICKEL_AXE);
-        TOOL_ITEMS.add(NICKEL_HOE);
-
-        // 铬工具
-        TOOL_ITEMS.add(CHROME_SWORD);
-        TOOL_ITEMS.add(CHROME_PICKAXE);
-        TOOL_ITEMS.add(CHROME_SHOVEL);
-        TOOL_ITEMS.add(CHROME_AXE);
-        TOOL_ITEMS.add(CHROME_HOE);
-
-        // 锇工具
-        TOOL_ITEMS.add(OSMIUM_SWORD);
-        TOOL_ITEMS.add(OSMIUM_PICKAXE);
-        TOOL_ITEMS.add(OSMIUM_SHOVEL);
-        TOOL_ITEMS.add(OSMIUM_AXE);
-        TOOL_ITEMS.add(OSMIUM_HOE);
-
-        // 锡工具
-        TOOL_ITEMS.add(TIN_SWORD);
-        TOOL_ITEMS.add(TIN_PICKAXE);
-        TOOL_ITEMS.add(TIN_SHOVEL);
-        TOOL_ITEMS.add(TIN_AXE);
-        TOOL_ITEMS.add(TIN_HOE);
-
-        // 银工具
-        TOOL_ITEMS.add(SILVER_SWORD);
-        TOOL_ITEMS.add(SILVER_PICKAXE);
-        TOOL_ITEMS.add(SILVER_SHOVEL);
-        TOOL_ITEMS.add(SILVER_AXE);
-        TOOL_ITEMS.add(SILVER_HOE);
-
-        // 铂工具
-        TOOL_ITEMS.add(PLATINUM_SWORD);
-        TOOL_ITEMS.add(PLATINUM_PICKAXE);
-        TOOL_ITEMS.add(PLATINUM_SHOVEL);
-        TOOL_ITEMS.add(PLATINUM_AXE);
-        TOOL_ITEMS.add(PLATINUM_HOE);
-
-        // 钛工具
-        TOOL_ITEMS.add(TITANIUM_SWORD);
-        TOOL_ITEMS.add(TITANIUM_PICKAXE);
-        TOOL_ITEMS.add(TITANIUM_SHOVEL);
-        TOOL_ITEMS.add(TITANIUM_AXE);
-        TOOL_ITEMS.add(TITANIUM_HOE);
-
-        // 钨工具
-        TOOL_ITEMS.add(TUNGSTEN_SWORD);
-        TOOL_ITEMS.add(TUNGSTEN_PICKAXE);
-        TOOL_ITEMS.add(TUNGSTEN_SHOVEL);
-        TOOL_ITEMS.add(TUNGSTEN_AXE);
-        TOOL_ITEMS.add(TUNGSTEN_HOE);
-
-        // 钴工具
-        TOOL_ITEMS.add(COBALT_SWORD);
-        TOOL_ITEMS.add(COBALT_PICKAXE);
-        TOOL_ITEMS.add(COBALT_SHOVEL);
-        TOOL_ITEMS.add(COBALT_AXE);
-        TOOL_ITEMS.add(COBALT_HOE);
-
-        // 青铜工具
-        TOOL_ITEMS.add(BRONZE_SWORD);
-        TOOL_ITEMS.add(BRONZE_PICKAXE);
-        TOOL_ITEMS.add(BRONZE_SHOVEL);
-        TOOL_ITEMS.add(BRONZE_AXE);
-        TOOL_ITEMS.add(BRONZE_HOE);
-
-        // 黄铜工具
-        TOOL_ITEMS.add(BRASS_SWORD);
-        TOOL_ITEMS.add(BRASS_PICKAXE);
-        TOOL_ITEMS.add(BRASS_SHOVEL);
-        TOOL_ITEMS.add(BRASS_AXE);
-        TOOL_ITEMS.add(BRASS_HOE);
-
-        // 不锈钢工具
-        TOOL_ITEMS.add(STAINLESS_STEEL_SWORD);
-        TOOL_ITEMS.add(STAINLESS_STEEL_PICKAXE);
-        TOOL_ITEMS.add(STAINLESS_STEEL_SHOVEL);
-        TOOL_ITEMS.add(STAINLESS_STEEL_AXE);
-        TOOL_ITEMS.add(STAINLESS_STEEL_HOE);
-
-        // 碳钢工具
-        TOOL_ITEMS.add(CARBON_STEEL_SWORD);
-        TOOL_ITEMS.add(CARBON_STEEL_PICKAXE);
-        TOOL_ITEMS.add(CARBON_STEEL_SHOVEL);
-        TOOL_ITEMS.add(CARBON_STEEL_AXE);
-        TOOL_ITEMS.add(CARBON_STEEL_HOE);
-
-        // 高速钢工具
-        TOOL_ITEMS.add(HIGH_SPEED_STEEL_SWORD);
-        TOOL_ITEMS.add(HIGH_SPEED_STEEL_PICKAXE);
-        TOOL_ITEMS.add(HIGH_SPEED_STEEL_SHOVEL);
-        TOOL_ITEMS.add(HIGH_SPEED_STEEL_AXE);
-        TOOL_ITEMS.add(HIGH_SPEED_STEEL_HOE);
-
-        // 工具钢工具
-        TOOL_ITEMS.add(TOOL_STEEL_SWORD);
-        TOOL_ITEMS.add(TOOL_STEEL_PICKAXE);
-        TOOL_ITEMS.add(TOOL_STEEL_SHOVEL);
-        TOOL_ITEMS.add(TOOL_STEEL_AXE);
-        TOOL_ITEMS.add(TOOL_STEEL_HOE);
-
-        // 碳化钨工具
-        TOOL_ITEMS.add(TUNGSTEN_CARBIDE_SWORD);
-        TOOL_ITEMS.add(TUNGSTEN_CARBIDE_PICKAXE);
-        TOOL_ITEMS.add(TUNGSTEN_CARBIDE_SHOVEL);
-        TOOL_ITEMS.add(TUNGSTEN_CARBIDE_AXE);
-        TOOL_ITEMS.add(TUNGSTEN_CARBIDE_HOE);
-
-        // 硬质合金工具
-        TOOL_ITEMS.add(CEMENTED_CARBIDE_SWORD);
-        TOOL_ITEMS.add(CEMENTED_CARBIDE_PICKAXE);
-        TOOL_ITEMS.add(CEMENTED_CARBIDE_SHOVEL);
-        TOOL_ITEMS.add(CEMENTED_CARBIDE_AXE);
-        TOOL_ITEMS.add(CEMENTED_CARBIDE_HOE);
-
-        // 康铜工具
-        TOOL_ITEMS.add(CONSTANTAN_SWORD);
-        TOOL_ITEMS.add(CONSTANTAN_PICKAXE);
-        TOOL_ITEMS.add(CONSTANTAN_SHOVEL);
-        TOOL_ITEMS.add(CONSTANTAN_AXE);
-        TOOL_ITEMS.add(CONSTANTAN_HOE);
-
-    }
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TOOL_TAB =
             CREATIVE_TABS.register("tool_tab",

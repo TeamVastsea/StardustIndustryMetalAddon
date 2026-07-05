@@ -1,6 +1,8 @@
 package com.fastjim.stardustindustrymetaladdon.client;
 
 import com.fastjim.stardustindustrymetaladdon.StardustIndustryMetalAddon;
+import com.fastjim.stardustindustrymetaladdon.block.MetalBlock;
+import net.minecraft.client.particle.ParticleEngine;
 import net.minecraft.client.particle.TerrainParticle;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -12,11 +14,9 @@ import java.lang.reflect.Field;
 @EventBusSubscriber(modid = StardustIndustryMetalAddon.MODID, value = Dist.CLIENT)
 public class ParticleColorHandler {
 
-    // 目标颜色：浅灰色
-    private static final int TARGET_COLOR = 0xFFC0C0C0;
-
-    // 缓存 TerrainParticle 的 color 字段
     private static Field colorField;
+    private static Field particlesField;
+    private static Field stateField;
 
     static {
         try {
@@ -24,46 +24,48 @@ public class ParticleColorHandler {
             colorField.setAccessible(true);
         } catch (NoSuchFieldException e) {
             try {
-                // 备选字段名
                 colorField = TerrainParticle.class.getDeclaredField("tintColor");
                 colorField.setAccessible(true);
             } catch (NoSuchFieldException ex) {
                 StardustIndustryMetalAddon.LOGGER.error("无法找到 TerrainParticle 的颜色字段", ex);
             }
         }
+        try {
+            particlesField = ParticleEngine.class.getDeclaredField("particles");
+            particlesField.setAccessible(true);
+        } catch (NoSuchFieldException e) {
+            StardustIndustryMetalAddon.LOGGER.error("无法找到 ParticleEngine 的 particles 字段", e);
+        }
+        try {
+            stateField = TerrainParticle.class.getDeclaredField("state");
+            stateField.setAccessible(true);
+        } catch (NoSuchFieldException e) {
+            StardustIndustryMetalAddon.LOGGER.error("无法找到 TerrainParticle 的 state 字段", e);
+        }
     }
 
     @SubscribeEvent
     public static void onClientTick(ClientTickEvent.Post event) {
-        // 每帧遍历所有粒子，将金属方块的粒子改为灰色
+        if (particlesField == null || colorField == null || stateField == null) return;
+
         var particleEngine = net.minecraft.client.Minecraft.getInstance().particleEngine;
         if (particleEngine == null) return;
 
-        // 通过反射获取粒子列表
         try {
-            var particlesField = particleEngine.getClass().getDeclaredField("particles");
-            particlesField.setAccessible(true);
+            @SuppressWarnings("unchecked")
             var particles = (java.util.Queue<net.minecraft.client.particle.Particle>) particlesField.get(particleEngine);
-
-            for (net.minecraft.client.particle.Particle particle : particles) {
+            for (var particle : particles) {
                 if (particle instanceof TerrainParticle terrainParticle) {
-                    // 检查是否是金属方块
                     try {
-                        var stateField = TerrainParticle.class.getDeclaredField("state");
-                        stateField.setAccessible(true);
                         var state = (net.minecraft.world.level.block.state.BlockState) stateField.get(terrainParticle);
-                        if (state.getBlock() instanceof com.fastjim.stardustindustrymetaladdon.block.MetalBlock) {
-                            if (colorField != null) {
-                                colorField.setInt(terrainParticle, TARGET_COLOR);
-                            }
+                        if (state.getBlock() instanceof MetalBlock metalBlock) {
+                            colorField.setInt(terrainParticle, metalBlock.getColor());
                         }
                     } catch (Exception ignored) {
-                        // 忽略单个粒子的反射错误
                     }
                 }
             }
         } catch (Exception ignored) {
-            // 忽略反射错误
         }
     }
 }

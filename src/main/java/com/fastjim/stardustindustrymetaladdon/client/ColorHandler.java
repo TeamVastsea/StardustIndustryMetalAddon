@@ -305,9 +305,7 @@ public class ColorHandler {
     public static void onRegisterBlockColors(RegisterColorHandlersEvent.Block event) {
         event.register((state, level, pos, tintIndex) -> {
             if (state.getBlock() instanceof MetalBlock metalBlock) {
-                int color = metalBlock.getColor();
-                StardustIndustryMetalAddon.LOGGER.info("🔵 MetalBlock color: " + Integer.toHexString(color));
-                return color;
+                return metalBlock.getColor();
             }
             return 0xFFFFFFFF;
         },
