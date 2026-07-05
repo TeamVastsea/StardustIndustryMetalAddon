@@ -26,6 +26,7 @@ public class ModItem {
     // 创意栏列表
     private static final List<DeferredItem<?>> METAL_ITEMS = new ArrayList<>();
     private static final List<DeferredItem<?>> TOOL_ITEMS  = new ArrayList<>();
+    private static DeferredItem<PickaxeItem> STEEL_PICKAXE;
 
     static {
         for (MetalMaterial m : MetalMaterial.values()) {
@@ -45,8 +46,10 @@ public class ModItem {
             if (m.hasTools) {
                 TOOL_ITEMS.add(ITEMS.register("tool/" + m.id + "_sword",
                         () -> new SwordItem(m, new Item.Properties().attributes(SwordItem.createAttributes(m, 3, -2.4F)))));
-                TOOL_ITEMS.add(ITEMS.register("tool/" + m.id + "_pickaxe",
-                        () -> new PickaxeItem(m, new Item.Properties().attributes(PickaxeItem.createAttributes(m, 1, -2.8F)))));
+                DeferredItem<PickaxeItem> pickaxe = ITEMS.register("tool/" + m.id + "_pickaxe",
+                        () -> new PickaxeItem(m, new Item.Properties().attributes(PickaxeItem.createAttributes(m, 1, -2.8F))));
+                TOOL_ITEMS.add(pickaxe);
+                if (m == MetalMaterial.STEEL) STEEL_PICKAXE = pickaxe;
                 TOOL_ITEMS.add(ITEMS.register("tool/" + m.id + "_shovel",
                         () -> new ShovelItem(m, new Item.Properties().attributes(ShovelItem.createAttributes(m, 1.5F, -3.0F)))));
                 TOOL_ITEMS.add(ITEMS.register("tool/" + m.id + "_axe",
@@ -74,7 +77,7 @@ public class ModItem {
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> TOOL_TAB = CREATIVE_TABS.register("tool_tab",
             () -> CreativeModeTab.builder()
                     .title(Component.translatable("itemGroup." + StardustIndustryMetalAddon.MODID + ".tool_tab"))
-                    .icon(() -> INGOTS.get(MetalMaterial.STEEL).get().getDefaultInstance())
+                    .icon(() -> STEEL_PICKAXE.get().getDefaultInstance())
                     .displayItems((parameters, output) -> TOOL_ITEMS.forEach(output::accept))
                     .build());
 
