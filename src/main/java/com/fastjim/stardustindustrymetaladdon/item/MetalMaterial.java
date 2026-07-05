@@ -10,32 +10,46 @@ import javax.annotation.Nullable;
 
 public enum MetalMaterial implements Tier {
 
+    // ToolStats:  incorrectTag, uses, speed, damage, enchantmentValue
     // ArmorStats: helmet, chestplate, leggings, boots, toughness, knockbackResistance, enchantmentValue
-    STEEL("steel",           0xFFb1b1b1, true, BlockTags.INCORRECT_FOR_DIAMOND_TOOL,  350,  6.5f, 2.5f, 14,
+    STEEL("steel",      0xFFb1b1b1,
+            new ToolStats(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,   350, 6.5f, 2.5f, 14),
             new ArmorStats(2, 6, 5, 2, 0.0f, 0.00f, 9)),
-    ALUMINIUM("aluminium",   0xFFd4d4d4, true, BlockTags.INCORRECT_FOR_STONE_TOOL,    180,  7.0f, 1.0f, 16,
+    ALUMINIUM("aluminium", 0xFFd4d4d4,
+            new ToolStats(BlockTags.INCORRECT_FOR_STONE_TOOL,     180, 7.0f, 1.0f, 16),
             new ArmorStats(1, 4, 3, 1, 0.0f, 0.00f, 16)),
-    LEAD("lead",             0xFFa0a0b0, true, BlockTags.INCORRECT_FOR_STONE_TOOL,    200,  4.0f, 1.5f, 10,
+    LEAD("lead",        0xFFa0a0b0,
+            new ToolStats(BlockTags.INCORRECT_FOR_STONE_TOOL,     200, 4.0f, 1.5f, 10),
             new ArmorStats(2, 5, 4, 2, 0.0f, 0.00f, 10)),
-    ZINC("zinc",             0xFFc8d0d0, true, BlockTags.INCORRECT_FOR_IRON_TOOL,     210,  4.5f, 1.5f, 12,
+    ZINC("zinc",        0xFFc8d0d0,
+            new ToolStats(BlockTags.INCORRECT_FOR_IRON_TOOL,      210, 4.5f, 1.5f, 12),
             new ArmorStats(1, 4, 3, 1, 0.0f, 0.00f, 12)),
-    NICKEL("nickel",         0xFFb2bfbf, true, BlockTags.INCORRECT_FOR_IRON_TOOL,     400,  6.0f, 2.0f, 14,
+    NICKEL("nickel",    0xFFb2bfbf,
+            new ToolStats(BlockTags.INCORRECT_FOR_IRON_TOOL,      400, 6.0f, 2.0f, 14),
             new ArmorStats(2, 6, 5, 2, 0.0f, 0.00f, 14)),
-    CHROME("chrome",         0xFFa0b8b0, true, BlockTags.INCORRECT_FOR_IRON_TOOL,     320,  7.5f, 2.8f, 12,
+    CHROME("chrome",    0xFFa0b8b0,
+            new ToolStats(BlockTags.INCORRECT_FOR_IRON_TOOL,      320, 7.5f, 2.8f, 12),
             new ArmorStats(2, 6, 5, 2, 0.5f, 0.00f, 12)),
-    OSMIUM("osmium",         0xFF8890a0, true, BlockTags.INCORRECT_FOR_DIAMOND_TOOL,  600,  8.0f, 3.5f, 10,
+    OSMIUM("osmium",    0xFF8890a0,
+            new ToolStats(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,   600, 8.0f, 3.5f, 10),
             new ArmorStats(3, 7, 6, 3, 1.0f, 0.10f, 10)),
-    TIN("tin",               0xFFa8b0b8, true, BlockTags.INCORRECT_FOR_STONE_TOOL,    150,  3.5f, 1.0f,  8,
-            new ArmorStats(1, 3, 2, 1, 0.0f, 0.00f, 8)),
-    SILVER("silver",         0xFFf0f0f0, true, BlockTags.INCORRECT_FOR_STONE_TOOL,    250,  5.5f, 2.0f, 20,
+    TIN("tin",          0xFFa8b0b8,
+            new ToolStats(BlockTags.INCORRECT_FOR_STONE_TOOL,     150, 3.5f, 1.0f,  8),
+            new ArmorStats(1, 3, 2, 1, 0.0f, 0.00f,  8)),
+    SILVER("silver",    0xFFf0f0f0,
+            new ToolStats(BlockTags.INCORRECT_FOR_STONE_TOOL,     250, 5.5f, 2.0f, 20),
             new ArmorStats(2, 5, 4, 2, 0.0f, 0.00f, 20)),
-    PLATINUM("platinum",     0xFFd0d0d8, true, BlockTags.INCORRECT_FOR_STONE_TOOL,    280,  5.0f, 2.2f, 22,
+    PLATINUM("platinum",0xFFd0d0d8,
+            new ToolStats(BlockTags.INCORRECT_FOR_STONE_TOOL,     280, 5.0f, 2.2f, 22),
             new ArmorStats(2, 6, 5, 2, 1.0f, 0.00f, 22)),
-    TITANIUM("titanium",     0xFFb0b8c0, true, BlockTags.INCORRECT_FOR_IRON_TOOL,     500,  7.0f, 3.0f, 14,
+    TITANIUM("titanium",0xFFb0b8c0,
+            new ToolStats(BlockTags.INCORRECT_FOR_IRON_TOOL,      500, 7.0f, 3.0f, 14),
             new ArmorStats(2, 6, 5, 2, 1.0f, 0.00f, 14)),
-    TUNGSTEN("tungsten",     0xFF47484d, true, BlockTags.INCORRECT_FOR_DIAMOND_TOOL,  800,  7.5f, 4.0f,  8,
-            new ArmorStats(3, 8, 6, 3, 2.0f, 0.10f, 8)),
-    COBALT("cobalt",         0xFF0050a0, true, BlockTags.INCORRECT_FOR_NETHERITE_TOOL,450,  6.8f, 3.0f, 12,
+    TUNGSTEN("tungsten",0xFF47484d,
+            new ToolStats(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,   800, 7.5f, 4.0f,  8),
+            new ArmorStats(3, 8, 6, 3, 2.0f, 0.10f,  8)),
+    COBALT("cobalt",    0xFF0050a0,
+            new ToolStats(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 450, 6.8f, 3.0f, 12),
             new ArmorStats(3, 8, 6, 3, 2.0f, 0.10f, 12)),
     MANGANESE("manganese",          0xFF9c7574),
     MAGNESIUM("magnesium",          0xFFc0c8c8),
@@ -76,21 +90,29 @@ public enum MetalMaterial implements Tier {
     LUTETIUM("lutetium",            0xFFe7ebc4),
     SCANDIUM("scandium",            0xFFc4e0eb),
     YTTRIUM("yttrium",              0xFFc0c0c8),
-    BRONZE("bronze",         0xFFcd7f32, true, BlockTags.INCORRECT_FOR_IRON_TOOL,     300,  6.0f, 2.2f, 12,
+    BRONZE("bronze",         0xFFcd7f32,
+            new ToolStats(BlockTags.INCORRECT_FOR_IRON_TOOL,     300, 6.0f, 2.2f, 12),
             new ArmorStats(2, 5, 4, 2, 0.0f, 0.00f, 12)),
-    BRASS("brass",           0xFFb5a642, true, BlockTags.INCORRECT_FOR_IRON_TOOL,     260,  5.5f, 1.8f, 15,
+    BRASS("brass",           0xFFb5a642,
+            new ToolStats(BlockTags.INCORRECT_FOR_IRON_TOOL,     260, 5.5f, 1.8f, 15),
             new ArmorStats(1, 4, 3, 1, 0.0f, 0.00f, 15)),
-    STAINLESS_STEEL("stainless_steel",   0xFFc8c8c8, true, BlockTags.INCORRECT_FOR_DIAMOND_TOOL,  550, 6.5f, 2.8f, 12,
+    STAINLESS_STEEL("stainless_steel",   0xFFc8c8c8,
+            new ToolStats(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,  550, 6.5f, 2.8f, 12),
             new ArmorStats(2, 6, 5, 2, 0.5f, 0.00f, 12)),
-    CARBON_STEEL("carbon_steel",         0xFF3a3e40, true, BlockTags.INCORRECT_FOR_DIAMOND_TOOL,  500, 6.8f, 3.0f, 10,
+    CARBON_STEEL("carbon_steel",         0xFF3a3e40,
+            new ToolStats(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,  500, 6.8f, 3.0f, 10),
             new ArmorStats(2, 7, 5, 2, 1.0f, 0.00f, 10)),
-    HIGH_SPEED_STEEL("high_speed_steel", 0xFFb8b0b0, true, BlockTags.INCORRECT_FOR_DIAMOND_TOOL,  400, 8.5f, 3.2f, 10,
+    HIGH_SPEED_STEEL("high_speed_steel", 0xFFb8b0b0,
+            new ToolStats(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,  400, 8.5f, 3.2f, 10),
             new ArmorStats(2, 7, 6, 2, 1.0f, 0.00f, 10)),
-    TOOL_STEEL("tool_steel",             0xFFcdcdcd, true, BlockTags.INCORRECT_FOR_DIAMOND_TOOL,  600, 7.2f, 3.5f, 10,
+    TOOL_STEEL("tool_steel",             0xFFcdcdcd,
+            new ToolStats(BlockTags.INCORRECT_FOR_DIAMOND_TOOL,  600, 7.2f, 3.5f, 10),
             new ArmorStats(3, 7, 6, 3, 1.0f, 0.00f, 10)),
-    TUNGSTEN_CARBIDE("tungsten_carbide", 0xFF424242, true, BlockTags.INCORRECT_FOR_NETHERITE_TOOL,1200, 9.0f, 4.5f, 6,
+    TUNGSTEN_CARBIDE("tungsten_carbide", 0xFF424242,
+            new ToolStats(BlockTags.INCORRECT_FOR_NETHERITE_TOOL,1200, 9.0f, 4.5f, 6),
             new ArmorStats(3, 8, 6, 3, 3.0f, 0.10f, 6)),
-    CEMENTED_CARBIDE("cemented_carbide", 0xFF707070, true, BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 1000, 8.5f, 4.0f, 6,
+    CEMENTED_CARBIDE("cemented_carbide", 0xFF707070,
+            new ToolStats(BlockTags.INCORRECT_FOR_DIAMOND_TOOL, 1000, 8.5f, 4.0f, 6),
             new ArmorStats(3, 8, 6, 3, 2.0f, 0.10f, 6)),
     INCONEL("inconel",              0xFFa8b0b0),
     HASTELLOY("hastelloy",          0xFFa0a8a8),
@@ -113,7 +135,8 @@ public enum MetalMaterial implements Tier {
     NICHROME("nichrome",            0xFFb0b0b0),
     FECRALLOY("fecralloy",          0xFFcecdcc),
     MANGANIN("manganin",            0xFFa09080),
-    CONSTANTAN("constantan",    0xFFb0a090, true, BlockTags.INCORRECT_FOR_IRON_TOOL, 350, 5.0f, 2.0f, 14,
+    CONSTANTAN("constantan",    0xFFb0a090,
+            new ToolStats(BlockTags.INCORRECT_FOR_IRON_TOOL, 350, 5.0f, 2.0f, 14),
             new ArmorStats(2, 5, 4, 2, 0.0f, 0.00f, 14)),
     THERMOCOUPLE_ALLOY("thermocouple_alloy", 0xFF9c9c9c),
     PLATINUM_RHODIUM("platinum_rhodium",     0xFFffe0a9),
@@ -182,53 +205,41 @@ public enum MetalMaterial implements Tier {
     TITANIUM_SULFIDE("titanium_sulfide", 0xFF7b825d),
     GERMANIUM_SULFIDE("germanium_sulfide", 0xFF2b3f4c);
 
-    // ── 盔甲数值 record ──────────────────────────────────────────────────────
+    // ── ToolStats record ─────────────────────────────────────────────────────
+    public record ToolStats(TagKey<Block> incorrectBlocksForDrops, int uses, float speed,
+                            float damage, int enchantmentValue) {}
+
+    // ── ArmorStats record ────────────────────────────────────────────────────
     public record ArmorStats(int helmet, int chestplate, int leggings, int boots,
                              float toughness, float knockbackResistance, int enchantmentValue) {}
 
     // ── 字段 ─────────────────────────────────────────────────────────────────
     public final String id;
     public final int color;
-    public final boolean hasTools;
+    @Nullable public final ToolStats toolStats;
     @Nullable public final ArmorStats armorStats;
-    private final TagKey<Block> incorrectBlocksForDrops;
-    private final int uses;
-    private final float speed;
-    private final float damage;
-    private final int toolEnchantmentValue;
 
     // ── 构造函数 ─────────────────────────────────────────────────────────────
     MetalMaterial(String id, int color) {
-        this(id, color, false, null, 0, 0f, 0f, 0, null);
+        this(id, color, null, null);
     }
 
-    MetalMaterial(String id, int color, boolean hasTools, TagKey<Block> incorrectBlocksForDrops,
-                  int uses, float speed, float damage, int toolEnchantmentValue) {
-        this(id, color, hasTools, incorrectBlocksForDrops, uses, speed, damage, toolEnchantmentValue, null);
-    }
-
-    MetalMaterial(String id, int color, boolean hasTools, TagKey<Block> incorrectBlocksForDrops,
-                  int uses, float speed, float damage, int toolEnchantmentValue,
-                  @Nullable ArmorStats armorStats) {
+    MetalMaterial(String id, int color, @Nullable ToolStats toolStats, @Nullable ArmorStats armorStats) {
         this.id = id;
         this.color = color;
-        this.hasTools = hasTools;
+        this.toolStats = toolStats;
         this.armorStats = armorStats;
-        this.incorrectBlocksForDrops = incorrectBlocksForDrops;
-        this.uses = uses;
-        this.speed = speed;
-        this.damage = damage;
-        this.toolEnchantmentValue = toolEnchantmentValue;
     }
 
+    public boolean hasTools() { return toolStats != null; }
     public boolean hasArmor() { return armorStats != null; }
 
     // ── Tier ─────────────────────────────────────────────────────────────────
-    @Override public int getUses() { return uses; }
-    @Override public float getSpeed() { return speed; }
-    @Override public float getAttackDamageBonus() { return damage; }
-    @Override public TagKey<Block> getIncorrectBlocksForDrops() { return incorrectBlocksForDrops; }
-    @Override public int getEnchantmentValue() { return toolEnchantmentValue; }
+    @Override public int getUses() { return toolStats != null ? toolStats.uses() : 0; }
+    @Override public float getSpeed() { return toolStats != null ? toolStats.speed() : 0f; }
+    @Override public float getAttackDamageBonus() { return toolStats != null ? toolStats.damage() : 0f; }
+    @Override public TagKey<Block> getIncorrectBlocksForDrops() { return toolStats != null ? toolStats.incorrectBlocksForDrops() : BlockTags.INCORRECT_FOR_WOODEN_TOOL; }
+    @Override public int getEnchantmentValue() { return toolStats != null ? toolStats.enchantmentValue() : 0; }
 
     @Override
     public Ingredient getRepairIngredient() {
