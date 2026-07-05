@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/titanium_sulfide" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/titanium_sulfide_ingot", "count": 9 }
+}

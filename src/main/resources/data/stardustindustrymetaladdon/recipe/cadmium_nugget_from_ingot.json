@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/cadmium" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/cadmium_nugget", "count": 9 }
+}

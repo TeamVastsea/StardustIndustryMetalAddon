@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/selenium" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/selenium_nugget", "count": 9 }
+}

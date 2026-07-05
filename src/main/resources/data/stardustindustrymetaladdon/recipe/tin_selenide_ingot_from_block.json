@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/tin_selenide" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/tin_selenide_ingot", "count": 9 }
+}

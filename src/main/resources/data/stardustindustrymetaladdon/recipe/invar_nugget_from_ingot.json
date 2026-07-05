@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/invar" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/invar_nugget", "count": 9 }
+}

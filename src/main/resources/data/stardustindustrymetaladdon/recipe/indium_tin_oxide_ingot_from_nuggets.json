@@ -1,0 +1,6 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "###", "###"],
+  "key": { "#": { "tag": "c:nuggets/indium_tin_oxide" } },
+  "result": { "id": "stardustindustrymetaladdon:ingot/indium_tin_oxide_ingot", "count": 1 }
+}

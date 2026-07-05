@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/chrome" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/chrome_nugget", "count": 9 }
+}

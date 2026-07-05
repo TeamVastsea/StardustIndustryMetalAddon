@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/bismuth_antimony" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/bismuth_antimony_ingot", "count": 9 }
+}

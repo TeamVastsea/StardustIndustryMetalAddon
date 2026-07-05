@@ -1,0 +1,6 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "###", "###"],
+  "key": { "#": { "tag": "c:ingots/silver_tin" } },
+  "result": { "id": "stardustindustrymetaladdon:storage_block/silver_tin", "count": 1 }
+}

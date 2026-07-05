@@ -1,0 +1,6 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "###", "###"],
+  "key": { "#": { "tag": "c:ingots/molybdenum_silicide" } },
+  "result": { "id": "stardustindustrymetaladdon:storage_block/molybdenum_silicide", "count": 1 }
+}

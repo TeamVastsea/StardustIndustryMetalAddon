@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/lead_sulfide" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/lead_sulfide_ingot", "count": 9 }
+}

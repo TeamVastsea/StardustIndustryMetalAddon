@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/titanium" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/titanium_ingot", "count": 9 }
+}

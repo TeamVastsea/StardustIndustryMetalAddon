@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/cobalt_alloy" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/cobalt_alloy_ingot", "count": 9 }
+}

@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/platinum" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/platinum_nugget", "count": 9 }
+}

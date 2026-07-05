@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/indium_phosphide" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/indium_phosphide_nugget", "count": 9 }
+}

@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/chromoly" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/chromoly_nugget", "count": 9 }
+}

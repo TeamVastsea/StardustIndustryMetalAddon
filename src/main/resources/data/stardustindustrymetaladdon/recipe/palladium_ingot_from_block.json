@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/palladium" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/palladium_ingot", "count": 9 }
+}

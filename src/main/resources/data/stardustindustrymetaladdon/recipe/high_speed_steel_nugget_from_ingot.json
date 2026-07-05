@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/high_speed_steel" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/high_speed_steel_nugget", "count": 9 }
+}

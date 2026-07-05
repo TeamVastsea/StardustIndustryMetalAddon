@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/copper_sulfide" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/copper_sulfide_nugget", "count": 9 }
+}

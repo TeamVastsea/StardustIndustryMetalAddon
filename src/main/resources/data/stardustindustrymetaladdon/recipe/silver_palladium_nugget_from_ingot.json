@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/silver_palladium" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/silver_palladium_nugget", "count": 9 }
+}

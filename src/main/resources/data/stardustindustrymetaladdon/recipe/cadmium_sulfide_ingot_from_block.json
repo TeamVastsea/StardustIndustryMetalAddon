@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/cadmium_sulfide" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/cadmium_sulfide_ingot", "count": 9 }
+}

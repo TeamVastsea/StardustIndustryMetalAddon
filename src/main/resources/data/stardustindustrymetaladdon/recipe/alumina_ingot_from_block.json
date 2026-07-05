@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/alumina" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/alumina_ingot", "count": 9 }
+}

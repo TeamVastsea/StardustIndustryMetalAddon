@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/gold_tin" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/gold_tin_ingot", "count": 9 }
+}

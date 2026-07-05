@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/titanium_dioxide" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/titanium_dioxide_nugget", "count": 9 }
+}

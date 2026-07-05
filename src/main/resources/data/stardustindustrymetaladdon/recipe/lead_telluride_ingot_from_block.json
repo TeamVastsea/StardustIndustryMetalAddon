@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/lead_telluride" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/lead_telluride_ingot", "count": 9 }
+}

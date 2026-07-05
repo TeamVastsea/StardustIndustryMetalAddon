@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/indium_tin_oxide" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/indium_tin_oxide_nugget", "count": 9 }
+}

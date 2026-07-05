@@ -1,0 +1,6 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "###", "###"],
+  "key": { "#": { "tag": "c:nuggets/titanium_dioxide" } },
+  "result": { "id": "stardustindustrymetaladdon:ingot/titanium_dioxide_ingot", "count": 1 }
+}

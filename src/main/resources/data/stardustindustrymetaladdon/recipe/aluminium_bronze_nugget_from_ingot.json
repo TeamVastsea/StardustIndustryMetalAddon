@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/aluminium_bronze" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/aluminium_bronze_nugget", "count": 9 }
+}

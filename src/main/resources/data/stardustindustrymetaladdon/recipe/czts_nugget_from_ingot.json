@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/czts" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/czts_nugget", "count": 9 }
+}

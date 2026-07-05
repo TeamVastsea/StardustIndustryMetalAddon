@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/lutetium" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/lutetium_nugget", "count": 9 }
+}

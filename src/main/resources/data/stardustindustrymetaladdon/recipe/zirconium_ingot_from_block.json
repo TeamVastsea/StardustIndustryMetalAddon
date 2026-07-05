@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/zirconium" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/zirconium_ingot", "count": 9 }
+}

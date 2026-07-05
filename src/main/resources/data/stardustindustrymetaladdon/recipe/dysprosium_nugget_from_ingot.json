@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/dysprosium" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/dysprosium_nugget", "count": 9 }
+}

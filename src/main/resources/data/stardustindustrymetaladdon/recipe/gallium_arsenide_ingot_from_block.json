@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/gallium_arsenide" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/gallium_arsenide_ingot", "count": 9 }
+}

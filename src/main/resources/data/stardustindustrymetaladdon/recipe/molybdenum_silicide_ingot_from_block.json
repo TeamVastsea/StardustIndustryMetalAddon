@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/molybdenum_silicide" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/molybdenum_silicide_ingot", "count": 9 }
+}

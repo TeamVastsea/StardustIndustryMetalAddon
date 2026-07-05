@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/tungsten_disulfide" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/tungsten_disulfide_nugget", "count": 9 }
+}

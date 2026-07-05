@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/silver_antimony_telluride" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/silver_antimony_telluride_nugget", "count": 9 }
+}

@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/gallium_arsenide" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/gallium_arsenide_nugget", "count": 9 }
+}

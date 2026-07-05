@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/magnesium" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/magnesium_ingot", "count": 9 }
+}

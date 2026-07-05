@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/magnesium_alloy" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/magnesium_alloy_nugget", "count": 9 }
+}

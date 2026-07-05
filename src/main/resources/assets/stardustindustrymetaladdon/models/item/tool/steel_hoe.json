@@ -1,0 +1,7 @@
+﻿{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "stardustindustrymetaladdon:item/tool/a_hoe",
+    "layer1": "stardustindustrymetaladdon:item/tool/b_hoe"
+  }
+}

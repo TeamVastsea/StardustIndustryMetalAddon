@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/europium" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/europium_nugget", "count": 9 }
+}

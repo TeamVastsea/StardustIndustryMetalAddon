@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/bismuth_antimony" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/bismuth_antimony_nugget", "count": 9 }
+}

@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/chromoly" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/chromoly_ingot", "count": 9 }
+}

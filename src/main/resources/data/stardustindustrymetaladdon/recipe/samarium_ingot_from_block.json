@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/samarium" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/samarium_ingot", "count": 9 }
+}

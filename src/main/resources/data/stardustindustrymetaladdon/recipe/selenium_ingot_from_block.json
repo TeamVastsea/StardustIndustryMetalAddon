@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/selenium" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/selenium_ingot", "count": 9 }
+}

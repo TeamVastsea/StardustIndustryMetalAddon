@@ -1,0 +1,6 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "###", "###"],
+  "key": { "#": { "tag": "c:ingots/cemented_carbide" } },
+  "result": { "id": "stardustindustrymetaladdon:storage_block/cemented_carbide", "count": 1 }
+}

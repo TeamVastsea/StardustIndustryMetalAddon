@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/ruthenium" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/ruthenium_nugget", "count": 9 }
+}

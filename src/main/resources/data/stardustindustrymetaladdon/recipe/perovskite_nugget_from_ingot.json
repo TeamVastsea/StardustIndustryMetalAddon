@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/perovskite" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/perovskite_nugget", "count": 9 }
+}

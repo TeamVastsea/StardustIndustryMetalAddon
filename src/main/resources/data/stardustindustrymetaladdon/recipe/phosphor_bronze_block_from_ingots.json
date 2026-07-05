@@ -1,0 +1,6 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "###", "###"],
+  "key": { "#": { "tag": "c:ingots/phosphor_bronze" } },
+  "result": { "id": "stardustindustrymetaladdon:storage_block/phosphor_bronze", "count": 1 }
+}

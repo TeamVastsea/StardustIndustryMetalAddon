@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/thulium" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/thulium_ingot", "count": 9 }
+}

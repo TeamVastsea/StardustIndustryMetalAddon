@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/titanium_nitride" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/titanium_nitride_nugget", "count": 9 }
+}

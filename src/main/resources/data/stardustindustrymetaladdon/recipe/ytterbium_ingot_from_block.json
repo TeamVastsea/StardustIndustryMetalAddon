@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/ytterbium" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/ytterbium_ingot", "count": 9 }
+}

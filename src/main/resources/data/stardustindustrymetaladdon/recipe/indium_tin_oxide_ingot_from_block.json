@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/indium_tin_oxide" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/indium_tin_oxide_ingot", "count": 9 }
+}

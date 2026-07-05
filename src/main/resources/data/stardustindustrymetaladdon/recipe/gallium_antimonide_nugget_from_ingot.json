@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/gallium_antimonide" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/gallium_antimonide_nugget", "count": 9 }
+}

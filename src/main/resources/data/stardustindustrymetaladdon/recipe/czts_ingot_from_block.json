@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/czts" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/czts_ingot", "count": 9 }
+}

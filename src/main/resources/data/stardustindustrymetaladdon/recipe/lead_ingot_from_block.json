@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/lead" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/lead_ingot", "count": 9 }
+}

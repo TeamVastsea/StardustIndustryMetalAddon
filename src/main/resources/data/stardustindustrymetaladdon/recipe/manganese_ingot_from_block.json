@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/manganese" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/manganese_ingot", "count": 9 }
+}

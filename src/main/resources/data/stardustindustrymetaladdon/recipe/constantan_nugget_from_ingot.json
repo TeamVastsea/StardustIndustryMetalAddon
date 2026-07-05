@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/constantan" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/constantan_nugget", "count": 9 }
+}

@@ -1,0 +1,6 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "###", "###"],
+  "key": { "#": { "tag": "c:nuggets/gold_germanium" } },
+  "result": { "id": "stardustindustrymetaladdon:ingot/gold_germanium_ingot", "count": 1 }
+}

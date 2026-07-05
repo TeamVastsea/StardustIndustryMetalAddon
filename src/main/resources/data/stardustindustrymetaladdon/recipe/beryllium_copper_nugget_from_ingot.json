@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/beryllium_copper" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/beryllium_copper_nugget", "count": 9 }
+}

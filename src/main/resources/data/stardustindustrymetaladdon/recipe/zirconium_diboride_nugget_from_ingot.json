@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/zirconium_diboride" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/zirconium_diboride_nugget", "count": 9 }
+}

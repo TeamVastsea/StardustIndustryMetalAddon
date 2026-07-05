@@ -1,0 +1,7 @@
+﻿{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "stardustindustrymetaladdon:item/tool/a_sword",
+    "layer1": "stardustindustrymetaladdon:item/tool/b_sword"
+  }
+}

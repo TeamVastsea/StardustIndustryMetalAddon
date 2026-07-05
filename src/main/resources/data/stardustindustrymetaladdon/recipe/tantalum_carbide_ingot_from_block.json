@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/tantalum_carbide" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/tantalum_carbide_ingot", "count": 9 }
+}

@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/titanium_sulfide" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/titanium_sulfide_nugget", "count": 9 }
+}

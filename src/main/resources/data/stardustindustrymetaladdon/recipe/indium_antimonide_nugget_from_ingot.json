@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/indium_antimonide" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/indium_antimonide_nugget", "count": 9 }
+}

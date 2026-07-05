@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/dysprosium" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/dysprosium_ingot", "count": 9 }
+}

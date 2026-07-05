@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/niobium_carbide" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/niobium_carbide_ingot", "count": 9 }
+}

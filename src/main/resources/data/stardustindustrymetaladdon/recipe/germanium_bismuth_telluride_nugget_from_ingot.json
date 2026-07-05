@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/germanium_bismuth_telluride" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/germanium_bismuth_telluride_nugget", "count": 9 }
+}

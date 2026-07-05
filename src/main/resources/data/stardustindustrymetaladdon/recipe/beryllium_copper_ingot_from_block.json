@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/beryllium_copper" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/beryllium_copper_ingot", "count": 9 }
+}

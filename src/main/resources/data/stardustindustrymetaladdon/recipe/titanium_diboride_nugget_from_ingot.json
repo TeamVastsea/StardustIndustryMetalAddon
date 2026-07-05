@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/titanium_diboride" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/titanium_diboride_nugget", "count": 9 }
+}

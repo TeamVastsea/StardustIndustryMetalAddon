@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/tellurium" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/tellurium_nugget", "count": 9 }
+}

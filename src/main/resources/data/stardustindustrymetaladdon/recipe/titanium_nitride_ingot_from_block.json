@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/titanium_nitride" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/titanium_nitride_ingot", "count": 9 }
+}

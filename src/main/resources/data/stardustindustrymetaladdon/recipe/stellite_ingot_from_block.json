@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/stellite" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/stellite_ingot", "count": 9 }
+}

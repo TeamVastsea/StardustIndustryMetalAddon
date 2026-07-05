@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/boron_nitride" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/boron_nitride_nugget", "count": 9 }
+}

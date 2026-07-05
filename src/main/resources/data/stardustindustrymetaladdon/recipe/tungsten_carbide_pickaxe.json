@@ -1,0 +1,9 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", " / ", " / "],
+  "key": {
+    "#": { "tag": "c:ingots/tungsten_carbide" },
+    "/": { "item": "minecraft:stick" }
+  },
+  "result": { "id": "stardustindustrymetaladdon:tool/tungsten_carbide_pickaxe", "count": 1 }
+}

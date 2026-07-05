@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/gallium_antimonide" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/gallium_antimonide_ingot", "count": 9 }
+}

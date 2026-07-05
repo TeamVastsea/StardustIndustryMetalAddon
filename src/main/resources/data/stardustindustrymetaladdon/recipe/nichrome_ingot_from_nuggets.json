@@ -1,0 +1,6 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "###", "###"],
+  "key": { "#": { "tag": "c:nuggets/nichrome" } },
+  "result": { "id": "stardustindustrymetaladdon:ingot/nichrome_ingot", "count": 1 }
+}

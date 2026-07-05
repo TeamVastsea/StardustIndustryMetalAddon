@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/copper_nickel" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/copper_nickel_nugget", "count": 9 }
+}

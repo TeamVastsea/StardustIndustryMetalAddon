@@ -1,0 +1,6 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "###", "###"],
+  "key": { "#": { "tag": "c:nuggets/niobium" } },
+  "result": { "id": "stardustindustrymetaladdon:ingot/niobium_ingot", "count": 1 }
+}

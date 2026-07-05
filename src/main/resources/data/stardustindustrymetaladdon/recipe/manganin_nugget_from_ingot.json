@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/manganin" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/manganin_nugget", "count": 9 }
+}

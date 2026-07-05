@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/cadmium_telluride" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/cadmium_telluride_ingot", "count": 9 }
+}

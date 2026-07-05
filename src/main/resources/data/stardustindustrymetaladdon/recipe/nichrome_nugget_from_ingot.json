@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/nichrome" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/nichrome_nugget", "count": 9 }
+}

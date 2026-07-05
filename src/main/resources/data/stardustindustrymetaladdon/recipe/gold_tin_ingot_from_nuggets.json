@@ -1,0 +1,6 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "###", "###"],
+  "key": { "#": { "tag": "c:nuggets/gold_tin" } },
+  "result": { "id": "stardustindustrymetaladdon:ingot/gold_tin_ingot", "count": 1 }
+}

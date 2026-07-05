@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/gadolinium" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/gadolinium_ingot", "count": 9 }
+}

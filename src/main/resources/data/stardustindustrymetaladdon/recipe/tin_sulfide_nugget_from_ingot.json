@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/tin_sulfide" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/tin_sulfide_nugget", "count": 9 }
+}

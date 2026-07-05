@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/brass" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/brass_nugget", "count": 9 }
+}

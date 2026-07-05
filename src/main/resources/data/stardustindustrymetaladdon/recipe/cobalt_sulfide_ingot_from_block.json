@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/cobalt_sulfide" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/cobalt_sulfide_ingot", "count": 9 }
+}

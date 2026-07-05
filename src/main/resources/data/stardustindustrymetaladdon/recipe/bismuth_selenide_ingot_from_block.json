@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/bismuth_selenide" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/bismuth_selenide_ingot", "count": 9 }
+}

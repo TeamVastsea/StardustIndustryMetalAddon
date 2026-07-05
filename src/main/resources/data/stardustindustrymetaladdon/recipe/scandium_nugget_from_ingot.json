@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/scandium" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/scandium_nugget", "count": 9 }
+}

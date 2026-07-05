@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/praseodymium" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/praseodymium_ingot", "count": 9 }
+}

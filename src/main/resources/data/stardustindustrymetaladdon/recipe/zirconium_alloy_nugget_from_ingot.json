@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/zirconium_alloy" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/zirconium_alloy_nugget", "count": 9 }
+}

@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/rhodium" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/rhodium_nugget", "count": 9 }
+}

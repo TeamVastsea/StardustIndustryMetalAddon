@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/aluminium_lithium" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/aluminium_lithium_nugget", "count": 9 }
+}

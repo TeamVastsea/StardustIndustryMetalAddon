@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/hafnium" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/hafnium_nugget", "count": 9 }
+}

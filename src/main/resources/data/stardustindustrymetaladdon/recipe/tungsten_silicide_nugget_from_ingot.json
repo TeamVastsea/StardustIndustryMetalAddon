@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/tungsten_silicide" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/tungsten_silicide_nugget", "count": 9 }
+}

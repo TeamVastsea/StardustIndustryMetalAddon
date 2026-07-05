@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/terbium" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/terbium_nugget", "count": 9 }
+}

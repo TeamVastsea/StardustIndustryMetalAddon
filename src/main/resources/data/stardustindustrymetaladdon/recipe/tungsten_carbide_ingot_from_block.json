@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/tungsten_carbide" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/tungsten_carbide_ingot", "count": 9 }
+}

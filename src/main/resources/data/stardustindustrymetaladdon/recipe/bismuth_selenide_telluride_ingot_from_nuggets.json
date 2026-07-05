@@ -1,0 +1,6 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "###", "###"],
+  "key": { "#": { "tag": "c:nuggets/bismuth_selenide_telluride" } },
+  "result": { "id": "stardustindustrymetaladdon:ingot/bismuth_selenide_telluride_ingot", "count": 1 }
+}

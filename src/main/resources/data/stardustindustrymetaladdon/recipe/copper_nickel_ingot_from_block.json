@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/copper_nickel" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/copper_nickel_ingot", "count": 9 }
+}

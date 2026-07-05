@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/molybdenum_sulfide" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/molybdenum_sulfide_nugget", "count": 9 }
+}

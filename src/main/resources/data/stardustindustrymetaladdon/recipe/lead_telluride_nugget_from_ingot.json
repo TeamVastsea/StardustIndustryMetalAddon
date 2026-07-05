@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/lead_telluride" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/lead_telluride_nugget", "count": 9 }
+}

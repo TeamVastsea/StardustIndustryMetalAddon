@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/germanium_sulfide" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/germanium_sulfide_ingot", "count": 9 }
+}

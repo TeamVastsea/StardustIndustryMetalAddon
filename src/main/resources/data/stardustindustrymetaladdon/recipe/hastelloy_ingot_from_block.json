@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/hastelloy" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/hastelloy_ingot", "count": 9 }
+}

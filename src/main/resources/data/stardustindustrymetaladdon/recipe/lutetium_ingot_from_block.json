@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/lutetium" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/lutetium_ingot", "count": 9 }
+}

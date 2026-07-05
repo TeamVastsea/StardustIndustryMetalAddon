@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/niobium" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/niobium_nugget", "count": 9 }
+}

@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/bismuth_sulfide" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/bismuth_sulfide_nugget", "count": 9 }
+}

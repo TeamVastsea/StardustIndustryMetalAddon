@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/thulium" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/thulium_nugget", "count": 9 }
+}

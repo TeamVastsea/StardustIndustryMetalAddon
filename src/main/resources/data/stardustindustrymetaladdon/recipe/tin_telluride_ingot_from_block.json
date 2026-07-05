@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/tin_telluride" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/tin_telluride_ingot", "count": 9 }
+}

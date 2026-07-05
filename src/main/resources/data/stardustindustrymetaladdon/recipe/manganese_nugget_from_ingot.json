@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/manganese" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/manganese_nugget", "count": 9 }
+}

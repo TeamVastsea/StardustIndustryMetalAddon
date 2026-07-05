@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/ruthenium" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/ruthenium_ingot", "count": 9 }
+}

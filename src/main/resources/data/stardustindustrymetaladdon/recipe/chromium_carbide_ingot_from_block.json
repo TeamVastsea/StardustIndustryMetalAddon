@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/chromium_carbide" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/chromium_carbide_ingot", "count": 9 }
+}

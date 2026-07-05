@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/lead_selenide" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/lead_selenide_ingot", "count": 9 }
+}

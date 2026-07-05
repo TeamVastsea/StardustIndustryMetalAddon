@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/zirconia" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/zirconia_nugget", "count": 9 }
+}

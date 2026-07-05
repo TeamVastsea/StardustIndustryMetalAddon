@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/silicon_germanium" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/silicon_germanium_ingot", "count": 9 }
+}

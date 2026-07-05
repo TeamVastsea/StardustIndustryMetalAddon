@@ -1,0 +1,6 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "###", "###"],
+  "key": { "#": { "tag": "c:nuggets/cadmium_telluride" } },
+  "result": { "id": "stardustindustrymetaladdon:ingot/cadmium_telluride_ingot", "count": 1 }
+}

@@ -1,0 +1,6 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "###", "###"],
+  "key": { "#": { "tag": "c:ingots/gold_germanium" } },
+  "result": { "id": "stardustindustrymetaladdon:storage_block/gold_germanium", "count": 1 }
+}

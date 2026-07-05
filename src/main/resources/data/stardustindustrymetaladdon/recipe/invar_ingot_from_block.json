@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/invar" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/invar_ingot", "count": 9 }
+}

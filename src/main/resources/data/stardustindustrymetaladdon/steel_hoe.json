@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AA",
+    " B",
+    " B"
+  ],
+  "key": {
+    "A": { "tag": "c:ingots/steel" },
+    "B": { "item": "minecraft:stick" }
+  },
+  "result": {
+    "id": "stardustindustrymetaladdon:tool/steel_hoe",
+    "count": 1
+  }
+}

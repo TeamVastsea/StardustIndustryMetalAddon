@@ -1,0 +1,6 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "###", "###"],
+  "key": { "#": { "tag": "c:ingots/bismuth_antimony" } },
+  "result": { "id": "stardustindustrymetaladdon:storage_block/bismuth_antimony", "count": 1 }
+}

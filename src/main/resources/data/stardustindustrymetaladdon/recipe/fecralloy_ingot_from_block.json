@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/fecralloy" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/fecralloy_ingot", "count": 9 }
+}

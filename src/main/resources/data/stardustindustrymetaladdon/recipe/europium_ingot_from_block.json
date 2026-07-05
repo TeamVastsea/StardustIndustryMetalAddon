@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/europium" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/europium_ingot", "count": 9 }
+}

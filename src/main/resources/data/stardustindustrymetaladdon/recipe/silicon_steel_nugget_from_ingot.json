@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/silicon_steel" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/silicon_steel_nugget", "count": 9 }
+}

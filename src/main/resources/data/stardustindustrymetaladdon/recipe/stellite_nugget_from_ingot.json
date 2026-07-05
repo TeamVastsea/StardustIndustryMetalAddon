@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/stellite" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/stellite_nugget", "count": 9 }
+}

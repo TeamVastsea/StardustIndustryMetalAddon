@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/gold_germanium" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/gold_germanium_nugget", "count": 9 }
+}

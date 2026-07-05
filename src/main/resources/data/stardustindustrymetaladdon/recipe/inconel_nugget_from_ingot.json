@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/inconel" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/inconel_nugget", "count": 9 }
+}

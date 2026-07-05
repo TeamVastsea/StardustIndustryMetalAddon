@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/silver_sulfide" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/silver_sulfide_nugget", "count": 9 }
+}

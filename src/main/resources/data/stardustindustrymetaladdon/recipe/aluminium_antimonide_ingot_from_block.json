@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/aluminium_antimonide" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/aluminium_antimonide_ingot", "count": 9 }
+}

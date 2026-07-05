@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/zinc" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/zinc_ingot", "count": 9 }
+}

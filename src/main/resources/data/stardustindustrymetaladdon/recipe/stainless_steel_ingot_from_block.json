@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/stainless_steel" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/stainless_steel_ingot", "count": 9 }
+}

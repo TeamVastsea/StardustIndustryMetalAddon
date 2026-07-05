@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/cigs" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/cigs_nugget", "count": 9 }
+}

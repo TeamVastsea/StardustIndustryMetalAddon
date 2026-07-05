@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/lithium" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/lithium_ingot", "count": 9 }
+}

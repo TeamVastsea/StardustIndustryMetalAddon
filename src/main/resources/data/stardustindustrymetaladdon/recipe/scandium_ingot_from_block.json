@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/scandium" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/scandium_ingot", "count": 9 }
+}

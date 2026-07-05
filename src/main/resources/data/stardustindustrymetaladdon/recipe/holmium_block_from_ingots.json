@@ -1,0 +1,6 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "###", "###"],
+  "key": { "#": { "tag": "c:ingots/holmium" } },
+  "result": { "id": "stardustindustrymetaladdon:storage_block/holmium", "count": 1 }
+}

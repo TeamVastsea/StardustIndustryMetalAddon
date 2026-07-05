@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/lead_sulfide" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/lead_sulfide_nugget", "count": 9 }
+}

@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/vanadium" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/vanadium_ingot", "count": 9 }
+}

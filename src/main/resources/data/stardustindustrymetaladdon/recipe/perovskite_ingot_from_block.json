@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/perovskite" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/perovskite_ingot", "count": 9 }
+}

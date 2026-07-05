@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/terbium" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/terbium_ingot", "count": 9 }
+}

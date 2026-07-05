@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/cupronickel" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/cupronickel_nugget", "count": 9 }
+}

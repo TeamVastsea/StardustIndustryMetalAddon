@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/thermocouple_alloy" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/thermocouple_alloy_nugget", "count": 9 }
+}

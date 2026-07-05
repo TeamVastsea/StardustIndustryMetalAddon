@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/gallium" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/gallium_nugget", "count": 9 }
+}

@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/tool_steel" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/tool_steel_nugget", "count": 9 }
+}

@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:storage_blocks/cerium" } ],
+  "result": { "id": "stardustindustrymetaladdon:ingot/cerium_ingot", "count": 9 }
+}

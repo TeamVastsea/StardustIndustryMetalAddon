@@ -1,0 +1,5 @@
+﻿{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [ { "tag": "c:ingots/tantalum" } ],
+  "result": { "id": "stardustindustrymetaladdon:nugget/tantalum_nugget", "count": 9 }
+}
