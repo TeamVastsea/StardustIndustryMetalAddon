@@ -29,19 +29,19 @@ public class ModItem {
 
     static {
         for (MetalMaterial m : MetalMaterial.values()) {
-            // 粒
             DeferredItem<MetalItem> nugget = ITEMS.register("nugget/" + m.id + "_nugget",
                     () -> new MetalItem(new Item.Properties(), m.color));
             NUGGETS.put(m, nugget);
             METAL_ITEMS.add(nugget);
-
-            // 锭
+        }
+        for (MetalMaterial m : MetalMaterial.values()) {
             DeferredItem<MetalItem> ingot = ITEMS.register("ingot/" + m.id + "_ingot",
                     () -> new MetalItem(new Item.Properties(), m.color));
             INGOTS.put(m, ingot);
             METAL_ITEMS.add(ingot);
-
-            // 工具
+        }
+        // 块由 ModBlocks 通过 addMetalItem 追加，天然排在锭之后
+        for (MetalMaterial m : MetalMaterial.values()) {
             if (m.hasTools) {
                 TOOL_ITEMS.add(ITEMS.register("tool/" + m.id + "_sword",
                         () -> new SwordItem(m, new Item.Properties().attributes(SwordItem.createAttributes(m, 3, -2.4F)))));
