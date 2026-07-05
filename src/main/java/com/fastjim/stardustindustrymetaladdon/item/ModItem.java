@@ -1,18 +1,22 @@
 package com.fastjim.stardustindustrymetaladdon.item;
 
 import com.fastjim.stardustindustrymetaladdon.StardustIndustryMetalAddon;
+import net.minecraft.core.Registry;
+import net.minecraft.core.Holder;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import java.util.ArrayList;
+import java.util.*;
 import java.util.EnumMap;
-import java.util.List;
-import java.util.Map;
 
 public class ModItem {
 
@@ -24,8 +28,11 @@ public class ModItem {
     public static final Map<MetalMaterial, DeferredItem<MetalItem>> NUGGETS = new EnumMap<>(MetalMaterial.class);
 
     // 创意栏列表
-    private static final List<DeferredItem<?>> METAL_ITEMS = new ArrayList<>();
-    private static final List<DeferredItem<?>> TOOL_ITEMS  = new ArrayList<>();
+    public static final Map<MetalMaterial, Holder<ArmorMaterial>> ARMOR_MATERIALS = new EnumMap<>(MetalMaterial.class);
+
+    private static final List<DeferredItem<?>> METAL_ITEMS  = new ArrayList<>();
+    private static final List<DeferredItem<?>> TOOL_ITEMS   = new ArrayList<>();
+    private static final List<DeferredItem<?>> ARMOR_ITEMS  = new ArrayList<>();
     private static DeferredItem<PickaxeItem> STEEL_PICKAXE;
 
     static {
@@ -41,6 +48,43 @@ public class ModItem {
             INGOTS.put(m, ingot);
             METAL_ITEMS.add(ingot);
         }
+        // 盔甲材质注册（ArmorMaterial 须在 BuiltInRegistries 阶段完成）
+        for (MetalMaterial m : MetalMaterial.values()) {
+            if (m.hasArmor()) {
+                MetalMaterial.ArmorStats a = m.armorStats;
+                EnumMap<ArmorItem.Type, Integer> defense = new EnumMap<>(ArmorItem.Type.class);
+                defense.put(ArmorItem.Type.HELMET,     a.helmet());
+                defense.put(ArmorItem.Type.CHESTPLATE, a.chestplate());
+                defense.put(ArmorItem.Type.LEGGINGS,   a.leggings());
+                defense.put(ArmorItem.Type.BOOTS,      a.boots());
+                defense.put(ArmorItem.Type.BODY,       a.chestplate());
+                Holder<ArmorMaterial> holder = Registry.registerForHolder(
+                        BuiltInRegistries.ARMOR_MATERIAL,
+                        ResourceLocation.fromNamespaceAndPath(StardustIndustryMetalAddon.MODID, m.id),
+                        new ArmorMaterial(
+                                defense,
+                                a.enchantmentValue(),
+                                SoundEvents.ARMOR_EQUIP_IRON,
+                                () -> Ingredient.of(INGOTS.get(m).get()),
+                                List.of(new ArmorMaterial.Layer(
+                                        ResourceLocation.fromNamespaceAndPath(StardustIndustryMetalAddon.MODID, m.id))),
+                                a.toughness(),
+                                a.knockbackResistance()
+                        )
+                );
+                ARMOR_MATERIALS.put(m, holder);
+
+                ARMOR_ITEMS.add(ITEMS.register("armor/" + m.id + "_helmet",
+                        () -> new MetalArmorItem(holder, ArmorItem.Type.HELMET, new Item.Properties(), m.color)));
+                ARMOR_ITEMS.add(ITEMS.register("armor/" + m.id + "_chestplate",
+                        () -> new MetalArmorItem(holder, ArmorItem.Type.CHESTPLATE, new Item.Properties(), m.color)));
+                ARMOR_ITEMS.add(ITEMS.register("armor/" + m.id + "_leggings",
+                        () -> new MetalArmorItem(holder, ArmorItem.Type.LEGGINGS, new Item.Properties(), m.color)));
+                ARMOR_ITEMS.add(ITEMS.register("armor/" + m.id + "_boots",
+                        () -> new MetalArmorItem(holder, ArmorItem.Type.BOOTS, new Item.Properties(), m.color)));
+            }
+        }
+
         // 块由 ModBlocks 通过 addMetalItem 追加，天然排在锭之后
         for (MetalMaterial m : MetalMaterial.values()) {
             if (m.hasTools) {
@@ -79,6 +123,13 @@ public class ModItem {
                     .title(Component.translatable("itemGroup." + StardustIndustryMetalAddon.MODID + ".tool_tab"))
                     .icon(() -> STEEL_PICKAXE.get().getDefaultInstance())
                     .displayItems((parameters, output) -> TOOL_ITEMS.forEach(output::accept))
+                    .build());
+
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> ARMOR_TAB = CREATIVE_TABS.register("armor_tab",
+            () -> CreativeModeTab.builder()
+                    .title(Component.translatable("itemGroup." + StardustIndustryMetalAddon.MODID + ".armor_tab"))
+                    .icon(() -> ARMOR_ITEMS.get(0).get().getDefaultInstance())
+                    .displayItems((parameters, output) -> ARMOR_ITEMS.forEach(output::accept))
                     .build());
 
     public static void register(IEventBus eventBus) {

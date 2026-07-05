@@ -3,6 +3,7 @@ package com.fastjim.stardustindustrymetaladdon.client;
 import com.fastjim.stardustindustrymetaladdon.StardustIndustryMetalAddon;
 import com.fastjim.stardustindustrymetaladdon.block.MetalBlock;
 import com.fastjim.stardustindustrymetaladdon.block.ModBlocks;
+import com.fastjim.stardustindustrymetaladdon.item.MetalArmorItem;
 import com.fastjim.stardustindustrymetaladdon.item.MetalBlockItem;
 import com.fastjim.stardustindustrymetaladdon.item.MetalItem;
 import com.fastjim.stardustindustrymetaladdon.item.MetalMaterial;
@@ -24,6 +25,8 @@ public class ColorHandler {
                 event.register((stack, tintIndex) -> metalItem.getColor(), metalItem);
             } else if (item instanceof MetalBlockItem metalBlockItem) {
                 event.register((stack, tintIndex) -> metalBlockItem.getColor(), metalBlockItem);
+            } else if (item instanceof MetalArmorItem armorItem) {
+                event.register((stack, tintIndex) -> armorItem.getColor(), armorItem);
             } else if (item instanceof TieredItem tieredItem
                     && tieredItem.getTier() instanceof MetalMaterial m) {
                 event.register((stack, tintIndex) -> tintIndex == 0 ? m.color : 0xFFFFFFFF, tieredItem);
