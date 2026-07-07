@@ -446,6 +446,7 @@
 
   "itemGroup.stardustindustrymetaladdon.metal_tab": "Stardust Industry Metals",
   "itemGroup.stardustindustrymetaladdon.tool_tab": "Stardust Industry Tool",
+  "itemGroup.stardustindustrymetaladdon.armor_tab": "Stardust Industry: Armor Addon",
 
   "item.stardustindustrymetaladdon.tool.steel_sword": "Steel Sword",
   "item.stardustindustrymetaladdon.tool.steel_pickaxe": "Steel Pickaxe",
@@ -556,5 +557,115 @@
   "item.stardustindustrymetaladdon.tool.constantan_pickaxe": "Constantan Pickaxe",
   "item.stardustindustrymetaladdon.tool.constantan_shovel": "Constantan Shovel",
   "item.stardustindustrymetaladdon.tool.constantan_axe": "Constantan Axe",
-  "item.stardustindustrymetaladdon.tool.constantan_hoe": "Constantan Hoe"
+  "item.stardustindustrymetaladdon.tool.constantan_hoe": "Constantan Hoe",
+
+  "item.stardustindustrymetaladdon.armor.steel_helmet": "Steel Helmet",
+  "item.stardustindustrymetaladdon.armor.steel_chestplate": "Steel Chestplate",
+  "item.stardustindustrymetaladdon.armor.steel_leggings": "Steel Leggings",
+  "item.stardustindustrymetaladdon.armor.steel_boots": "Steel Boots",
+
+  "item.stardustindustrymetaladdon.armor.aluminium_helmet": "Aluminium Helmet",
+  "item.stardustindustrymetaladdon.armor.aluminium_chestplate": "Aluminium Chestplate",
+  "item.stardustindustrymetaladdon.armor.aluminium_leggings": "Aluminium Leggings",
+  "item.stardustindustrymetaladdon.armor.aluminium_boots": "Aluminium Boots",
+
+  "item.stardustindustrymetaladdon.armor.lead_helmet": "Lead Helmet",
+  "item.stardustindustrymetaladdon.armor.lead_chestplate": "Lead Chestplate",
+  "item.stardustindustrymetaladdon.armor.lead_leggings": "Lead Leggings",
+  "item.stardustindustrymetaladdon.armor.lead_boots": "Lead Boots",
+
+  "item.stardustindustrymetaladdon.armor.zinc_helmet": "Zinc Helmet",
+  "item.stardustindustrymetaladdon.armor.zinc_chestplate": "Zinc Chestplate",
+  "item.stardustindustrymetaladdon.armor.zinc_leggings": "Zinc Leggings",
+  "item.stardustindustrymetaladdon.armor.zinc_boots": "Zinc Boots",
+
+  "item.stardustindustrymetaladdon.armor.nickel_helmet": "Nickel Helmet",
+  "item.stardustindustrymetaladdon.armor.nickel_chestplate": "Nickel Chestplate",
+  "item.stardustindustrymetaladdon.armor.nickel_leggings": "Nickel Leggings",
+  "item.stardustindustrymetaladdon.armor.nickel_boots": "Nickel Boots",
+
+  "item.stardustindustrymetaladdon.armor.chrome_helmet": "Chrome Helmet",
+  "item.stardustindustrymetaladdon.armor.chrome_chestplate": "Chrome Chestplate",
+  "item.stardustindustrymetaladdon.armor.chrome_leggings": "Chrome Leggings",
+  "item.stardustindustrymetaladdon.armor.chrome_boots": "Chrome Boots",
+
+  "item.stardustindustrymetaladdon.armor.osmium_helmet": "Osmium Helmet",
+  "item.stardustindustrymetaladdon.armor.osmium_chestplate": "Osmium Chestplate",
+  "item.stardustindustrymetaladdon.armor.osmium_leggings": "Osmium Leggings",
+  "item.stardustindustrymetaladdon.armor.osmium_boots": "Osmium Boots",
+
+  "item.stardustindustrymetaladdon.armor.tin_helmet": "Tin Helmet",
+  "item.stardustindustrymetaladdon.armor.tin_chestplate": "Tin Chestplate",
+  "item.stardustindustrymetaladdon.armor.tin_leggings": "Tin Leggings",
+  "item.stardustindustrymetaladdon.armor.tin_boots": "Tin Boots",
+
+  "item.stardustindustrymetaladdon.armor.silver_helmet": "Silver Helmet",
+  "item.stardustindustrymetaladdon.armor.silver_chestplate": "Silver Chestplate",
+  "item.stardustindustrymetaladdon.armor.silver_leggings": "Silver Leggings",
+  "item.stardustindustrymetaladdon.armor.silver_boots": "Silver Boots",
+
+  "item.stardustindustrymetaladdon.armor.platinum_helmet": "Platinum Helmet",
+  "item.stardustindustrymetaladdon.armor.platinum_chestplate": "Platinum Chestplate",
+  "item.stardustindustrymetaladdon.armor.platinum_leggings": "Platinum Leggings",
+  "item.stardustindustrymetaladdon.armor.platinum_boots": "Platinum Boots",
+
+  "item.stardustindustrymetaladdon.armor.titanium_helmet": "Titanium Helmet",
+  "item.stardustindustrymetaladdon.armor.titanium_chestplate": "Titanium Chestplate",
+  "item.stardustindustrymetaladdon.armor.titanium_leggings": "Titanium Leggings",
+  "item.stardustindustrymetaladdon.armor.titanium_boots": "Titanium Boots",
+
+  "item.stardustindustrymetaladdon.armor.tungsten_helmet": "Tungsten Helmet",
+  "item.stardustindustrymetaladdon.armor.tungsten_chestplate": "Tungsten Chestplate",
+  "item.stardustindustrymetaladdon.armor.tungsten_leggings": "Tungsten Leggings",
+  "item.stardustindustrymetaladdon.armor.tungsten_boots": "Tungsten Boots",
+
+  "item.stardustindustrymetaladdon.armor.cobalt_helmet": "Cobalt Helmet",
+  "item.stardustindustrymetaladdon.armor.cobalt_chestplate": "Cobalt Chestplate",
+  "item.stardustindustrymetaladdon.armor.cobalt_leggings": "Cobalt Leggings",
+  "item.stardustindustrymetaladdon.armor.cobalt_boots": "Cobalt Boots",
+
+  "item.stardustindustrymetaladdon.armor.bronze_helmet": "Bronze Helmet",
+  "item.stardustindustrymetaladdon.armor.bronze_chestplate": "Bronze Chestplate",
+  "item.stardustindustrymetaladdon.armor.bronze_leggings": "Bronze Leggings",
+  "item.stardustindustrymetaladdon.armor.bronze_boots": "Bronze Boots",
+
+  "item.stardustindustrymetaladdon.armor.brass_helmet": "Brass Helmet",
+  "item.stardustindustrymetaladdon.armor.brass_chestplate": "Brass Chestplate",
+  "item.stardustindustrymetaladdon.armor.brass_leggings": "Brass Leggings",
+  "item.stardustindustrymetaladdon.armor.brass_boots": "Brass Boots",
+
+  "item.stardustindustrymetaladdon.armor.stainless_steel_helmet": "Stainless Steel Helmet",
+  "item.stardustindustrymetaladdon.armor.stainless_steel_chestplate": "Stainless Steel Chestplate",
+  "item.stardustindustrymetaladdon.armor.stainless_steel_leggings": "Stainless Steel Leggings",
+  "item.stardustindustrymetaladdon.armor.stainless_steel_boots": "Stainless Steel Boots",
+
+  "item.stardustindustrymetaladdon.armor.carbon_steel_helmet": "Carbon Steel Helmet",
+  "item.stardustindustrymetaladdon.armor.carbon_steel_chestplate": "Carbon Steel Chestplate",
+  "item.stardustindustrymetaladdon.armor.carbon_steel_leggings": "Carbon Steel Leggings",
+  "item.stardustindustrymetaladdon.armor.carbon_steel_boots": "Carbon Steel Boots",
+
+  "item.stardustindustrymetaladdon.armor.high_speed_steel_helmet": "High Speed Steel Helmet",
+  "item.stardustindustrymetaladdon.armor.high_speed_steel_chestplate": "High Speed Steel Chestplate",
+  "item.stardustindustrymetaladdon.armor.high_speed_steel_leggings": "High Speed Steel Leggings",
+  "item.stardustindustrymetaladdon.armor.high_speed_steel_boots": "High Speed Steel Boots",
+
+  "item.stardustindustrymetaladdon.armor.tool_steel_helmet": "Tool Steel Helmet",
+  "item.stardustindustrymetaladdon.armor.tool_steel_chestplate": "Tool Steel Chestplate",
+  "item.stardustindustrymetaladdon.armor.tool_steel_leggings": "Tool Steel Leggings",
+  "item.stardustindustrymetaladdon.armor.tool_steel_boots": "Tool Steel Boots",
+
+  "item.stardustindustrymetaladdon.armor.tungsten_carbide_helmet": "Tungsten Carbide Helmet",
+  "item.stardustindustrymetaladdon.armor.tungsten_carbide_chestplate": "Tungsten Carbide Chestplate",
+  "item.stardustindustrymetaladdon.armor.tungsten_carbide_leggings": "Tungsten Carbide Leggings",
+  "item.stardustindustrymetaladdon.armor.tungsten_carbide_boots": "Tungsten Carbide Boots",
+
+  "item.stardustindustrymetaladdon.armor.cemented_carbide_helmet": "Cemented Carbide Helmet",
+  "item.stardustindustrymetaladdon.armor.cemented_carbide_chestplate": "Cemented Carbide Chestplate",
+  "item.stardustindustrymetaladdon.armor.cemented_carbide_leggings": "Cemented Carbide Leggings",
+  "item.stardustindustrymetaladdon.armor.cemented_carbide_boots": "Cemented Carbide Boots",
+
+  "item.stardustindustrymetaladdon.armor.constantan_helmet": "Constantan Helmet",
+  "item.stardustindustrymetaladdon.armor.constantan_chestplate": "Constantan Chestplate",
+  "item.stardustindustrymetaladdon.armor.constantan_leggings": "Constantan Leggings",
+  "item.stardustindustrymetaladdon.armor.constantan_boots": "Constantan Boots"
 }

@@ -1,0 +1,8 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["###", "# #", "   "],
+  "key": {
+    "#": { "tag": "c:ingots/aluminium" }
+  },
+  "result": { "id": "stardustindustrymetaladdon:armor/aluminium_helmet", "count": 1 }
+}

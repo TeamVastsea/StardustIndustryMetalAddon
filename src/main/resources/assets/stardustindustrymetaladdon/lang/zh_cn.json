@@ -446,6 +446,7 @@
 
   "itemGroup.stardustindustrymetaladdon.metal_tab": "星砾工业：金属附加",
   "itemGroup.stardustindustrymetaladdon.tool_tab": "星砾工业：附加工具",
+  "itemGroup.stardustindustrymetaladdon.armor_tab": "星砾工业：附加盔甲",
 
   "item.stardustindustrymetaladdon.tool.steel_sword": "钢剑",
   "item.stardustindustrymetaladdon.tool.steel_pickaxe": "钢镐",
@@ -556,5 +557,115 @@
   "item.stardustindustrymetaladdon.tool.constantan_pickaxe": "康铜镐",
   "item.stardustindustrymetaladdon.tool.constantan_shovel": "康铜锹",
   "item.stardustindustrymetaladdon.tool.constantan_axe": "康铜斧",
-  "item.stardustindustrymetaladdon.tool.constantan_hoe": "康铜锄"
+  "item.stardustindustrymetaladdon.tool.constantan_hoe": "康铜锄",
+
+  "item.stardustindustrymetaladdon.armor.steel_helmet": "钢头盔",
+  "item.stardustindustrymetaladdon.armor.steel_chestplate": "钢胸甲",
+  "item.stardustindustrymetaladdon.armor.steel_leggings": "钢护腿",
+  "item.stardustindustrymetaladdon.armor.steel_boots": "钢靴子",
+
+  "item.stardustindustrymetaladdon.armor.aluminium_helmet": "铝头盔",
+  "item.stardustindustrymetaladdon.armor.aluminium_chestplate": "铝胸甲",
+  "item.stardustindustrymetaladdon.armor.aluminium_leggings": "铝护腿",
+  "item.stardustindustrymetaladdon.armor.aluminium_boots": "铝靴子",
+
+  "item.stardustindustrymetaladdon.armor.lead_helmet": "铅头盔",
+  "item.stardustindustrymetaladdon.armor.lead_chestplate": "铅胸甲",
+  "item.stardustindustrymetaladdon.armor.lead_leggings": "铅护腿",
+  "item.stardustindustrymetaladdon.armor.lead_boots": "铅靴子",
+
+  "item.stardustindustrymetaladdon.armor.zinc_helmet": "锌头盔",
+  "item.stardustindustrymetaladdon.armor.zinc_chestplate": "锌胸甲",
+  "item.stardustindustrymetaladdon.armor.zinc_leggings": "锌护腿",
+  "item.stardustindustrymetaladdon.armor.zinc_boots": "锌靴子",
+
+  "item.stardustindustrymetaladdon.armor.nickel_helmet": "镍头盔",
+  "item.stardustindustrymetaladdon.armor.nickel_chestplate": "镍胸甲",
+  "item.stardustindustrymetaladdon.armor.nickel_leggings": "镍护腿",
+  "item.stardustindustrymetaladdon.armor.nickel_boots": "镍靴子",
+
+  "item.stardustindustrymetaladdon.armor.chrome_helmet": "铬头盔",
+  "item.stardustindustrymetaladdon.armor.chrome_chestplate": "铬胸甲",
+  "item.stardustindustrymetaladdon.armor.chrome_leggings": "铬护腿",
+  "item.stardustindustrymetaladdon.armor.chrome_boots": "铬靴子",
+
+  "item.stardustindustrymetaladdon.armor.osmium_helmet": "锇头盔",
+  "item.stardustindustrymetaladdon.armor.osmium_chestplate": "锇胸甲",
+  "item.stardustindustrymetaladdon.armor.osmium_leggings": "锇护腿",
+  "item.stardustindustrymetaladdon.armor.osmium_boots": "锇靴子",
+
+  "item.stardustindustrymetaladdon.armor.tin_helmet": "锡头盔",
+  "item.stardustindustrymetaladdon.armor.tin_chestplate": "锡胸甲",
+  "item.stardustindustrymetaladdon.armor.tin_leggings": "锡护腿",
+  "item.stardustindustrymetaladdon.armor.tin_boots": "锡靴子",
+
+  "item.stardustindustrymetaladdon.armor.silver_helmet": "银头盔",
+  "item.stardustindustrymetaladdon.armor.silver_chestplate": "银胸甲",
+  "item.stardustindustrymetaladdon.armor.silver_leggings": "银护腿",
+  "item.stardustindustrymetaladdon.armor.silver_boots": "银靴子",
+
+  "item.stardustindustrymetaladdon.armor.platinum_helmet": "铂头盔",
+  "item.stardustindustrymetaladdon.armor.platinum_chestplate": "铂胸甲",
+  "item.stardustindustrymetaladdon.armor.platinum_leggings": "铂护腿",
+  "item.stardustindustrymetaladdon.armor.platinum_boots": "铂靴子",
+
+  "item.stardustindustrymetaladdon.armor.titanium_helmet": "钛头盔",
+  "item.stardustindustrymetaladdon.armor.titanium_chestplate": "钛胸甲",
+  "item.stardustindustrymetaladdon.armor.titanium_leggings": "钛护腿",
+  "item.stardustindustrymetaladdon.armor.titanium_boots": "钛靴子",
+
+  "item.stardustindustrymetaladdon.armor.tungsten_helmet": "钨头盔",
+  "item.stardustindustrymetaladdon.armor.tungsten_chestplate": "钨胸甲",
+  "item.stardustindustrymetaladdon.armor.tungsten_leggings": "钨护腿",
+  "item.stardustindustrymetaladdon.armor.tungsten_boots": "钨靴子",
+
+  "item.stardustindustrymetaladdon.armor.cobalt_helmet": "钴头盔",
+  "item.stardustindustrymetaladdon.armor.cobalt_chestplate": "钴胸甲",
+  "item.stardustindustrymetaladdon.armor.cobalt_leggings": "钴护腿",
+  "item.stardustindustrymetaladdon.armor.cobalt_boots": "钴靴子",
+
+  "item.stardustindustrymetaladdon.armor.bronze_helmet": "青铜头盔",
+  "item.stardustindustrymetaladdon.armor.bronze_chestplate": "青铜胸甲",
+  "item.stardustindustrymetaladdon.armor.bronze_leggings": "青铜护腿",
+  "item.stardustindustrymetaladdon.armor.bronze_boots": "青铜靴子",
+
+  "item.stardustindustrymetaladdon.armor.brass_helmet": "黄铜头盔",
+  "item.stardustindustrymetaladdon.armor.brass_chestplate": "黄铜胸甲",
+  "item.stardustindustrymetaladdon.armor.brass_leggings": "黄铜护腿",
+  "item.stardustindustrymetaladdon.armor.brass_boots": "黄铜靴子",
+
+  "item.stardustindustrymetaladdon.armor.stainless_steel_helmet": "不锈钢头盔",
+  "item.stardustindustrymetaladdon.armor.stainless_steel_chestplate": "不锈钢胸甲",
+  "item.stardustindustrymetaladdon.armor.stainless_steel_leggings": "不锈钢护腿",
+  "item.stardustindustrymetaladdon.armor.stainless_steel_boots": "不锈钢靴子",
+
+  "item.stardustindustrymetaladdon.armor.carbon_steel_helmet": "碳钢头盔",
+  "item.stardustindustrymetaladdon.armor.carbon_steel_chestplate": "碳钢胸甲",
+  "item.stardustindustrymetaladdon.armor.carbon_steel_leggings": "碳钢护腿",
+  "item.stardustindustrymetaladdon.armor.carbon_steel_boots": "碳钢靴子",
+
+  "item.stardustindustrymetaladdon.armor.high_speed_steel_helmet": "高速钢头盔",
+  "item.stardustindustrymetaladdon.armor.high_speed_steel_chestplate": "高速钢胸甲",
+  "item.stardustindustrymetaladdon.armor.high_speed_steel_leggings": "高速钢护腿",
+  "item.stardustindustrymetaladdon.armor.high_speed_steel_boots": "高速钢靴子",
+
+  "item.stardustindustrymetaladdon.armor.tool_steel_helmet": "工具钢头盔",
+  "item.stardustindustrymetaladdon.armor.tool_steel_chestplate": "工具钢胸甲",
+  "item.stardustindustrymetaladdon.armor.tool_steel_leggings": "工具钢护腿",
+  "item.stardustindustrymetaladdon.armor.tool_steel_boots": "工具钢靴子",
+
+  "item.stardustindustrymetaladdon.armor.tungsten_carbide_helmet": "碳化钨头盔",
+  "item.stardustindustrymetaladdon.armor.tungsten_carbide_chestplate": "碳化钨胸甲",
+  "item.stardustindustrymetaladdon.armor.tungsten_carbide_leggings": "碳化钨护腿",
+  "item.stardustindustrymetaladdon.armor.tungsten_carbide_boots": "碳化钨靴子",
+
+  "item.stardustindustrymetaladdon.armor.cemented_carbide_helmet": "硬质合金头盔",
+  "item.stardustindustrymetaladdon.armor.cemented_carbide_chestplate": "硬质合金胸甲",
+  "item.stardustindustrymetaladdon.armor.cemented_carbide_leggings": "硬质合金护腿",
+  "item.stardustindustrymetaladdon.armor.cemented_carbide_boots": "硬质合金靴子",
+
+  "item.stardustindustrymetaladdon.armor.constantan_helmet": "康铜头盔",
+  "item.stardustindustrymetaladdon.armor.constantan_chestplate": "康铜胸甲",
+  "item.stardustindustrymetaladdon.armor.constantan_leggings": "康铜护腿",
+  "item.stardustindustrymetaladdon.armor.constantan_boots": "康铜靴子"
 }

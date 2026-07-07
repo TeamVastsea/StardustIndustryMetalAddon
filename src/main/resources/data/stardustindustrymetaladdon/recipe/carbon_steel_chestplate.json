@@ -1,0 +1,8 @@
+﻿{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["# #", "###", "###"],
+  "key": {
+    "#": { "tag": "c:ingots/carbon_steel" }
+  },
+  "result": { "id": "stardustindustrymetaladdon:armor/carbon_steel_chestplate", "count": 1 }
+}
